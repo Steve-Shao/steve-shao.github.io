@@ -8,90 +8,30 @@
     <language>zh</language>
     <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
 </copyright>
-    <lastBuildDate>Fri, 20 Nov 2020 22:52:56 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://steve-shao.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Math Support</title>
-      <link>https://steve-shao.github.io/zh/posts/math-support/</link>
-      <pubDate>Fri, 20 Nov 2020 22:52:56 +0800</pubDate>
+      <title>自卑与超越：父母，子女，不动点</title>
+      <link>https://steve-shao.github.io/zh/posts/2021-02-24-%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/math-support/</guid>
-      <description>&lt;p&gt;Eureka supports the rendering of mathematical formulas by using KaTeX.&lt;/p&gt;</description>
+      <guid>https://steve-shao.github.io/zh/posts/2021-02-24-%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;在我的童年记忆中，大多同龄人不怎么喜欢学习。问原因，说是父母逼得太狠；稍有松懈，轻则唠叨训斥，重则棍棒伺候。如今走入社会，再聊起学习，后悔的人不少。于是大家感慨：原来父母是对的，该好好管孩子的学习，要管得比父母当年更严。&lt;/p&gt;
+&lt;p&gt;会奏效么？&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Chapter 1</title>
-      <link>https://steve-shao.github.io/zh/docs/example-doc/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      <title>随笔：开始生活</title>
+      <link>https://steve-shao.github.io/zh/posts/2014-09-04-%E9%9A%8F%E7%AC%94-%E5%BC%80%E5%A7%8B%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/docs/example-doc/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://steve-shao.github.io/zh/docs/example-doc/nested-chapter/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/docs/example-doc/nested-chapter/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://steve-shao.github.io/zh/docs/example-doc/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/docs/example-doc/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://steve-shao.github.io/zh/docs/example-doc/nested-chapter/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/docs/example-doc/nested-chapter/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Featured Image</title>
-      <link>https://steve-shao.github.io/zh/posts/featured-image/</link>
-      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/posts/featured-image/</guid>
-      <description>&lt;p&gt;Maecenas maximus, elit in ornare porttitor, nisi eros hendrerit nisl, sed fermentum nulla urna blandit tellus.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://steve-shao.github.io/zh/posts/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/posts/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://steve-shao.github.io/zh/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/posts/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://steve-shao.github.io/zh/posts/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/posts/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <guid>https://steve-shao.github.io/zh/posts/2014-09-04-%E9%9A%8F%E7%AC%94-%E5%BC%80%E5%A7%8B%E7%94%9F%E6%B4%BB/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;我们往往觉得持续的失败最终能换来成功。事实上，只有自信能够滋养自信，只有成功能够带来成功。如果一个人重复着相同的错误，那么这些错误就只是在浪费时间。同样地，纵使我们抱怨自己的努力没有换来回报，这种抱怨仍只是对上天的诽谤。我们也许允许自己还没有找到更好的方法，却不能无视它的存在。毕竟体力上再勤奋，也无法弥补思考上的懒惰。&lt;/p&gt;</description>
     </item>
     
   </channel>
