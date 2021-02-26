@@ -1,66 +1,42 @@
 <!DOCTYPE html>
-<html lang='en'><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<html lang='en' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
 <title>Eureka Demo</title>
+<link rel="stylesheet" href="https://steve-shao.github.io/css/eureka.min.css">
+<script defer src="https://steve-shao.github.io/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
 
 <link rel="icon" type="image/png" sizes="32x32" href="https://steve-shao.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
 <link rel="apple-touch-icon" sizes="180x180" href="https://steve-shao.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
 
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://steve-shao.github.io/css/eureka.min.css">
-
-
-
-
-<script defer src="https://steve-shao.github.io/js/eureka.min.js"></script>
-
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
-<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
-
-<meta itemprop="name" content="Eureka Demo">
-<meta itemprop="description"
-    content="Eureka is a elegant and powerful theme for Hugo.">
-
-
-
-
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-        "@type": "ListItem",
-        "position":  1 ,
-        "name": "Eureka Demo",
-        "item": "https://steve-shao.github.io/"
-    },{
-        "@type": "ListItem",
-        "position":  2 ,
-        "name": "Tags",
-        "item": "https://steve-shao.github.io/tags/"
-    }]
-}
-</script>
+<meta name="description"
+  content="Eureka is a elegant and powerful theme for Hugo.">
 
 
 
 <meta property="og:title" content="Eureka Demo" />
 <meta property="og:type" content="website" />
+
+
+<meta property="og:image" content="https://steve-shao.github.io/images/icon.png">
+
+
 <meta property="og:url" content="https://steve-shao.github.io/tags/" />
 
 
@@ -85,47 +61,38 @@
 
 
 
-<meta property="og:updated_time" content="2020-05-26T00:00:00-04:00" />
+<meta property="og:updated_time" content="2020-05-26T00:00:00&#43;00:00" />
 
 
 
 <meta property="article:section" content="tags" />
 
 
-
 <link rel="alternate" type="application/rss+xml" href="https://steve-shao.github.io/tags/index.xml" title="Eureka Demo" />
+
 <body class="flex flex-col min-h-screen">
-    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
-        <div class="container mx-auto">
-            <div class="max-w-screen-xl"><script>
+    <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+        <div class="w-full max-w-screen-xl mx-auto"><script>
     let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-        || storageColorScheme == "Dark") {
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
         document.getElementsByTagName('html')[0].classList.add('dark')
-    } else if (storageColorScheme == "Light") {
-        document.getElementsByTagName('html')[0].classList.remove('dark')
     }
 </script>
 <nav class="flex items-center justify-between flex-wrap p-4">
-    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">Eureka Demo</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">Eureka Demo</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
         <i class="fas fa-bars"></i>
     </button>
 
     <div id="target"
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
-            currenturl="https://steve-shao.github.io/tags/">
-            
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
             <a href="/about/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">About</a>
-            
+                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">About</a>
             <a href="/post/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">Posts</a>
-            
+                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">Posts</a>
             <a href="/docs/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">Docs</a>
-            
+                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">Docs</a>
         </div>
 
         <div class="flex">
@@ -142,8 +109,6 @@
                     <span class="px-4 py-1 hover:text-eureka">Auto</span>
                 </div>
             </div>
-
-            
         </div>
     </div>
 
@@ -152,41 +117,30 @@
 
 </nav>
 <script>
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            switchMode('Auto')
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+    
     document.addEventListener('DOMContentLoaded', () => {
         getcolorscheme();
         switchBurger();
-        
     });
-
-    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
-        if (currenturl.length > 1) {
-            currenturl = currenturl.substr(0, currenturl.length - 1)
-        }
-
-        sessionStorage.setItem("mainKey", currenturl)
-
-        let elements = document.getElementsByClassName('main-a');
-        for (let i in elements) {
-            if (typeof elements[i] === "object") {
-                let elementurl = elements[i].getAttribute('href')
-                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
-                    elementurl = elementurl.substr(0, elementurl.length - 1)
-                }
-                if (elementurl == sessionStorage.getItem("mainKey")) {
-                    elements[i].classList.add('text-eureka')
-                } else {
-                    elements[i].classList.remove('text-eureka')
-                }
-            }
-        }
 </script></div>
-        </div>
     </header>
-
     <main class="flex-grow pt-16">
-        
-        <div class="container mx-auto ">
-            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+        <div class="pl-scrollbar">
+            <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
 <article class="mx-6 my-8">
     <h1 class="font-bold text-3xl text-primary-text">Tags</h1>
     
@@ -194,45 +148,31 @@
 <div class="bg-secondary-bg rounded px-6 py-8">
     
     <h2 class="text-lg text-primary-text my-2">
-        <a href="https://steve-shao.github.io/tags/image/" class="text-eureka hover:underline">
-            image
-        </a>
+        <a href="https://steve-shao.github.io/tags/image/" class="text-eureka hover:underline">image</a>
     </h2>
     
     <h2 class="text-lg text-primary-text my-2">
-        <a href="https://steve-shao.github.io/tags/css/" class="text-eureka hover:underline">
-            css
-        </a>
+        <a href="https://steve-shao.github.io/tags/css/" class="text-eureka hover:underline">css</a>
     </h2>
     
     <h2 class="text-lg text-primary-text my-2">
-        <a href="https://steve-shao.github.io/tags/html/" class="text-eureka hover:underline">
-            html
-        </a>
+        <a href="https://steve-shao.github.io/tags/html/" class="text-eureka hover:underline">html</a>
     </h2>
     
     <h2 class="text-lg text-primary-text my-2">
-        <a href="https://steve-shao.github.io/tags/markdown/" class="text-eureka hover:underline">
-            markdown
-        </a>
+        <a href="https://steve-shao.github.io/tags/markdown/" class="text-eureka hover:underline">markdown</a>
     </h2>
     
     <h2 class="text-lg text-primary-text my-2">
-        <a href="https://steve-shao.github.io/tags/themes/" class="text-eureka hover:underline">
-            themes
-        </a>
+        <a href="https://steve-shao.github.io/tags/themes/" class="text-eureka hover:underline">themes</a>
     </h2>
     
     <h2 class="text-lg text-primary-text my-2">
-        <a href="https://steve-shao.github.io/tags/text/" class="text-eureka hover:underline">
-            text
-        </a>
+        <a href="https://steve-shao.github.io/tags/text/" class="text-eureka hover:underline">text</a>
     </h2>
     
     <h2 class="text-lg text-primary-text my-2">
-        <a href="https://steve-shao.github.io/tags/emoji/" class="text-eureka hover:underline">
-            emoji
-        </a>
+        <a href="https://steve-shao.github.io/tags/emoji/" class="text-eureka hover:underline">emoji</a>
     </h2>
     
 </div>
@@ -241,13 +181,10 @@
         </div>
         
     </main>
-
-    <footer>
-        <div class="container mx-auto">
-            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
-    <p>&copy; 2020 <a href="https://www.wangchucheng.com/">C. Wang</a> and <a href="https://www.ruiqima.com/">R. Ma</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</footer></div>
-        </div>
+    <footer class="pl-scrollbar">
+        <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2020 <a href="https://www.wangchucheng.com/">C. Wang</a> and <a href="https://www.ruiqima.com/">R. Ma</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
     </footer>
 </body>
 
