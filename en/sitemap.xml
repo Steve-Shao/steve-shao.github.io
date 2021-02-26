@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://steve-shao.github.io/docs/</loc>
+    <loc>https://steve-shao.github.io/en/docs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -12,12 +12,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/docs/"
+                href="https://steve-shao.github.io/en/docs/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/notes/</loc>
+    <loc>https://steve-shao.github.io/en/notes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -26,12 +26,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/notes/"
+                href="https://steve-shao.github.io/en/notes/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/authors/</loc>
+    <loc>https://steve-shao.github.io/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -40,12 +40,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/authors/"
+                href="https://steve-shao.github.io/en/authors/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/categories/</loc>
+    <loc>https://steve-shao.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -54,12 +54,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/categories/"
+                href="https://steve-shao.github.io/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/authors/example-author/</loc>
+    <loc>https://steve-shao.github.io/en/authors/example-author/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -68,12 +68,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/authors/example-author/"
+                href="https://steve-shao.github.io/en/authors/example-author/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/</loc>
+    <loc>https://steve-shao.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -82,12 +82,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/"
+                href="https://steve-shao.github.io/en/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/authors/hugo-authors/</loc>
+    <loc>https://steve-shao.github.io/en/authors/hugo-authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -96,12 +96,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/authors/hugo-authors/"
+                href="https://steve-shao.github.io/en/authors/hugo-authors/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/series/</loc>
+    <loc>https://steve-shao.github.io/en/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -110,12 +110,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/series/"
+                href="https://steve-shao.github.io/en/series/"
                 />
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/tags/</loc>
+    <loc>https://steve-shao.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -124,7 +124,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/tags/"
+                href="https://steve-shao.github.io/en/tags/"
                 />
   </url>
   
