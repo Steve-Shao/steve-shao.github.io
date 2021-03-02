@@ -8,10 +8,20 @@
     <language>zh</language>
     <copyright>&amp;copy; H. Shao
 </copyright>
-    <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://steve-shao.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>合作的进化：阴谋，阳谋，复读机</title>
+      <link>https://steve-shao.github.io/zh/posts/2021-03-01-%E5%90%88%E4%BD%9C%E7%9A%84%E8%BF%9B%E5%8C%96/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/posts/2021-03-01-%E5%90%88%E4%BD%9C%E7%9A%84%E8%BF%9B%E5%8C%96/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;学博弈论，第一课就是“囚徒困境”：两人都合作，则都受益；都背叛，则都受损；但如果一方合作，一方背叛，背叛者有巨大收益，合作者则受损很多。论证之下，双方都只能背叛。“囚徒困境”，和《三体》中的“黑暗森林法则”一样，都代表了对人性的某种绝望。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>自卑与超越：父母，子女，不动点</title>
@@ -26,70 +36,80 @@
     
     <item>
       <title>李约瑟之问：试答</title>
-      <link>https://steve-shao.github.io/zh/posts/2020-09-16-%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE/</link>
+      <link>https://steve-shao.github.io/zh/posts/2020/2020-09-16-%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE-%E8%AF%95%E7%AD%94/</link>
       <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2020-09-16-%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2020/2020-09-16-%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE-%E8%AF%95%E7%AD%94/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;历史的重大演进，常常有量变引起质变的必然性；但其过程形式往往充满偶然。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>解构现代化：太极功夫</title>
-      <link>https://steve-shao.github.io/zh/posts/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96/</link>
+      <link>https://steve-shao.github.io/zh/posts/2020/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96-%E5%A4%AA%E6%9E%81%E5%8A%9F%E5%A4%AB/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2020/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96-%E5%A4%AA%E6%9E%81%E5%8A%9F%E5%A4%AB/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;光伏产业刚出现时，基本是欧洲的天下。那时的欧洲，一手“绿色主义”，哄各国都来买光伏；一手“自由贸易”，把竞争对手挨个挤垮。后来中国人进场，直接把产品卖成白菜价，欧洲人才慌了。于是欧洲祭出贸易禁令，一年不许买中国货。一年后？估摸那时中国企业都破产了，去低价收购就好。&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>红楼碎碎念：好事来之不易</title>
+      <link>https://steve-shao.github.io/zh/posts/2020/2020-07-31-%E7%BA%A2%E6%A5%BC%E7%A2%8E%E7%A2%8E%E5%BF%B5-%E5%A5%BD%E4%BA%8B%E6%9D%A5%E4%B9%8B%E4%B8%8D%E6%98%93/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/posts/2020/2020-07-31-%E7%BA%A2%E6%A5%BC%E7%A2%8E%E7%A2%8E%E5%BF%B5-%E5%A5%BD%E4%BA%8B%E6%9D%A5%E4%B9%8B%E4%B8%8D%E6%98%93/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;有一种说话习惯是“防御性”的；虽然很少在谈“沟通技巧”的书上见到，却是重要的经验。有人说武术是“本能的防御”加上“有序的进攻”，我想说话也是如此。人们喜欢讨论进攻的方法，但防御也许更重要。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>高铁规划：天降掌法</title>
-      <link>https://steve-shao.github.io/zh/posts/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/</link>
+      <link>https://steve-shao.github.io/zh/posts/2020/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/</link>
       <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2020/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;有人就有政治；人越多，做事越难。越是要紧事，就越有各种人用各种理由阻挠。对于如何做事，鲁迅先生出过一招。人性喜欢折中调和。你说屋子暗要开窗，大家不许；但你说要拆屋顶，大家就主张开窗了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>随笔：孤独的改革家</title>
-      <link>https://steve-shao.github.io/zh/posts/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/</link>
+      <link>https://steve-shao.github.io/zh/posts/2020/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2020/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;日前一时冲动，换了只新的苹果表。新的设备带来新的动力；这阵子被疫情荒废的健身计划，现在全都恢复了生机。为了趁热打铁，我重新整理了日程表，充满激情地开始推动新一轮的“自我改革”。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>随笔：运动式的自我治理</title>
-      <link>https://steve-shao.github.io/zh/posts/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/</link>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;前些日子读到一篇文章，讲的是“运动式治理”；主要谈在法治不健全的国家，政府常常处于周期性的反腐、揽权等运动中，以维系自身的有效统治。也就是说，当正式制度不完善时，就会有大量的“非正式制度”产生，作为正式制度的补充。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>随笔：胆小鬼之歌</title>
-      <link>https://steve-shao.github.io/zh/posts/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/</link>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;人有时是很矛盾的。像我，胆小又好奇心旺盛；这两个特点，就构成了一对矛盾。想做的事情很多，鼓起勇气实施了的很少。大部分的时间，都花在斟酌掂量上了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>随笔：写在试图为人的日子里</title>
-      <link>https://steve-shao.github.io/zh/posts/2015-05-05-%E9%9A%8F%E7%AC%94-%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA/</link>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA/</link>
       <pubDate>Tue, 05 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2015-05-05-%E9%9A%8F%E7%AC%94-%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;清代袁枚所著《子不语》中有这样的记载：&lt;/p&gt;
 &lt;p&gt;对妖而言，无论道行多深，其实都无法化成人形。因为妖无法理解人情。既然从鸟兽而来，自然只在乎生存繁衍；除骨肉血亲之外，只有自己可以相信。&lt;/p&gt;</description>
@@ -97,40 +117,40 @@
     
     <item>
       <title>随笔：秘密的秘密</title>
-      <link>https://steve-shao.github.io/zh/posts/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/</link>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;秘密是种很厉害的东西。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>随笔：作为超生命的人类</title>
-      <link>https://steve-shao.github.io/zh/posts/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/</link>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/</link>
       <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;人类将作为超生命诞生吗？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>越绝书：顺势而为</title>
-      <link>https://steve-shao.github.io/zh/posts/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/</link>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/</link>
       <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;读罢越绝书，印象最深的大概是“节事”两个字。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>随笔：开始生活</title>
-      <link>https://steve-shao.github.io/zh/posts/2014-09-04-%E9%9A%8F%E7%AC%94-%E5%BC%80%E5%A7%8B%E7%94%9F%E6%B4%BB/</link>
+      <link>https://steve-shao.github.io/zh/posts/2014/2014-09-04-%E9%9A%8F%E7%AC%94-%E5%BC%80%E5%A7%8B%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2014-09-04-%E9%9A%8F%E7%AC%94-%E5%BC%80%E5%A7%8B%E7%94%9F%E6%B4%BB/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2014/2014-09-04-%E9%9A%8F%E7%AC%94-%E5%BC%80%E5%A7%8B%E7%94%9F%E6%B4%BB/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;我们往往觉得持续的失败最终能换来成功。事实上，只有自信能够滋养自信，只有成功能够带来成功。如果一个人重复着相同的错误，那么这些错误就只是在浪费时间。同样地，纵使我们抱怨自己的努力没有换来回报，这种抱怨仍只是对上天的诽谤。我们也许允许自己还没有找到更好的方法，却不能无视它的存在。毕竟体力上再勤奋，也无法弥补思考上的懒惰。&lt;/p&gt;</description>
     </item>
