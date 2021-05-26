@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://steve-shao.github.io/en/notes/</loc>
+    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steve-shao.github.io/en/notes/2021-03-10-lp-duality-copy/</loc>
+    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steve-shao.github.io/en/</loc>
+    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/en/"
+                />
+  </url>
+  
+  <url>
     <loc>https://steve-shao.github.io/en/docs/</loc>
     <xhtml:link
                 rel="alternate"
@@ -14,10 +39,6 @@
                 hreflang="en"
                 href="https://steve-shao.github.io/en/docs/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://steve-shao.github.io/en/notes/</loc>
   </url>
   
   <url>
@@ -59,20 +80,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://steve-shao.github.io/en/authors/example-author/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://steve-shao.github.io/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/en/"
                 />
   </url>
   
