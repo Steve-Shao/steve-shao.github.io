@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>中堂书斋</title>
+    <title>H. Shao</title>
     <link>https://steve-shao.github.io/zh/</link>
-    <description>Recent content on 中堂书斋</description>
+    <description>Recent content on H. Shao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; H. Shao
@@ -126,6 +126,51 @@
     </item>
     
     <item>
+      <title>0.1. 偶然与必然</title>
+      <link>https://steve-shao.github.io/zh/docs/8-social/0-1-%E5%81%B6%E7%84%B6%E4%B8%8E%E5%BF%85%E7%84%B6/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/8-social/0-1-%E5%81%B6%E7%84%B6%E4%B8%8E%E5%BF%85%E7%84%B6/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>0.1. 生产与掠夺</title>
+      <link>https://steve-shao.github.io/zh/docs/6-politics/0-1-%E7%94%9F%E4%BA%A7%E4%B8%8E%E6%8E%A0%E5%A4%BA/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/6-politics/0-1-%E7%94%9F%E4%BA%A7%E4%B8%8E%E6%8E%A0%E5%A4%BA/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>0.2. 共生与寄生</title>
+      <link>https://steve-shao.github.io/zh/docs/6-politics/0-2-%E5%85%B1%E7%94%9F%E4%B8%8E%E5%AF%84%E7%94%9F/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/6-politics/0-2-%E5%85%B1%E7%94%9F%E4%B8%8E%E5%AF%84%E7%94%9F/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>0.2. 量变与质变</title>
+      <link>https://steve-shao.github.io/zh/docs/8-social/0-2-%E9%87%8F%E5%8F%98%E4%B8%8E%E8%B4%A8%E5%8F%98/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/8-social/0-2-%E9%87%8F%E5%8F%98%E4%B8%8E%E8%B4%A8%E5%8F%98/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>0.3. 后发与先发</title>
+      <link>https://steve-shao.github.io/zh/docs/6-politics/0-3-%E5%90%8E%E5%8F%91%E4%B8%8E%E5%85%88%E5%8F%91/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/6-politics/0-3-%E5%90%8E%E5%8F%91%E4%B8%8E%E5%85%88%E5%8F%91/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
       <title>00 - 做好人还是做坏人？</title>
       <link>https://steve-shao.github.io/zh/docs/5-strategy/00-%E5%81%9A%E5%A5%BD%E4%BA%BA%E8%BF%98%E6%98%AF%E5%81%9A%E5%9D%8F%E4%BA%BA/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -153,6 +198,15 @@
     </item>
     
     <item>
+      <title>1.1. 英美均势外交</title>
+      <link>https://steve-shao.github.io/zh/docs/6-politics/1-1-%E8%8B%B1%E7%BE%8E%E5%9D%87%E5%8A%BF%E5%A4%96%E4%BA%A4/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/6-politics/1-1-%E8%8B%B1%E7%BE%8E%E5%9D%87%E5%8A%BF%E5%A4%96%E4%BA%A4/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
       <title>10 - 倾听</title>
       <link>https://steve-shao.github.io/zh/docs/4-management/10-%E5%80%BE%E5%90%AC/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -167,15 +221,6 @@
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://steve-shao.github.io/zh/docs/7-economy/04/</guid>
-      <description>&lt;br&gt;</description>
-    </item>
-    
-    <item>
-      <title>11 - 英美均势外交</title>
-      <link>https://steve-shao.github.io/zh/docs/6-politics/11-%E8%8B%B1%E7%BE%8E%E5%9D%87%E5%8A%BF%E5%A4%96%E4%BA%A4/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/docs/6-politics/11-%E8%8B%B1%E7%BE%8E%E5%9D%87%E5%8A%BF%E5%A4%96%E4%BA%A4/</guid>
       <description>&lt;br&gt;</description>
     </item>
     
