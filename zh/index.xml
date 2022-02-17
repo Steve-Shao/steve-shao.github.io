@@ -35,36 +35,6 @@
     </item>
     
     <item>
-      <title>书单：国际关系</title>
-      <link>https://steve-shao.github.io/zh/books/%E4%B9%A6%E5%8D%95-%E5%9B%BD%E9%99%85%E5%85%B3%E7%B3%BB/</link>
-      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/books/%E4%B9%A6%E5%8D%95-%E5%9B%BD%E9%99%85%E5%85%B3%E7%B3%BB/</guid>
-      <description>&lt;br&gt;
-&lt;p&gt;阎学通&lt;/p&gt;
-&lt;p&gt;张维为 范勇鹏  沈逸&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>书单：政治经济学</title>
-      <link>https://steve-shao.github.io/zh/books/%E4%B9%A6%E5%8D%95-%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/</link>
-      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/books/%E4%B9%A6%E5%8D%95-%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/</guid>
-      <description>&lt;br&gt;
-&lt;p&gt;温铁军 翟东升&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>影视：党史</title>
-      <link>https://steve-shao.github.io/zh/books/%E5%89%A7%E7%9B%AE-%E5%85%9A%E5%8F%B2/</link>
-      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://steve-shao.github.io/zh/books/%E5%89%A7%E7%9B%AE-%E5%85%9A%E5%8F%B2/</guid>
-      <description>&lt;br&gt;</description>
-    </item>
-    
-    <item>
       <title>自卑与超越：父母，子女，不动点</title>
       <link>https://steve-shao.github.io/zh/posts/2021-02-24-%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A-%E4%B8%8D%E5%8A%A8%E7%82%B9/</link>
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
@@ -73,6 +43,24 @@
       <description>&lt;br&gt;
 &lt;p&gt;在我的童年记忆中，大多同龄人不怎么喜欢学习。问原因，说是父母逼得太狠；稍有松懈，轻则唠叨训斥，重则棍棒伺候。如今走入社会，再聊起学习，后悔的人不少。于是大家感慨：原来父母是对的，该好好管孩子的学习，要管得比父母当年更严。&lt;/p&gt;
 &lt;p&gt;会奏效么？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 1</title>
+      <link>https://steve-shao.github.io/zh/docs/4-management/%E8%AF%B4%E6%9C%8D/chapter-1/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/4-management/%E8%AF%B4%E6%9C%8D/chapter-1/</guid>
+      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://steve-shao.github.io/zh/docs/4-management/%E8%AF%B4%E6%9C%8D/chapter-2/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/4-management/%E8%AF%B4%E6%9C%8D/chapter-2/</guid>
+      <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -225,6 +213,15 @@
     </item>
     
     <item>
+      <title>11 - 公心与私心</title>
+      <link>https://steve-shao.github.io/zh/docs/5-strategy/11-%E5%85%AC%E5%BF%83%E4%B8%8E%E7%A7%81%E5%BF%83/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/5-strategy/11-%E5%85%AC%E5%BF%83%E4%B8%8E%E7%A7%81%E5%BF%83/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
       <title>11 - 识别情绪</title>
       <link>https://steve-shao.github.io/zh/docs/4-management/11-%E6%8F%8F%E8%BF%B0%E6%83%85%E7%BB%AA/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -248,6 +245,24 @@
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://steve-shao.github.io/zh/docs/4-management/13-%E5%AE%89%E6%85%B0/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>21 - 规则与公平</title>
+      <link>https://steve-shao.github.io/zh/docs/5-strategy/21-%E8%A7%84%E5%88%99%E4%B8%8E%E5%85%AC%E5%B9%B3/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/5-strategy/21-%E8%A7%84%E5%88%99%E4%B8%8E%E5%85%AC%E5%B9%B3/</guid>
+      <description>&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>22 - 筛选适合者</title>
+      <link>https://steve-shao.github.io/zh/docs/5-strategy/22-%E7%AD%9B%E9%80%89%E9%80%82%E5%90%88%E8%80%85/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/docs/5-strategy/22-%E7%AD%9B%E9%80%89%E9%80%82%E5%90%88%E8%80%85/</guid>
       <description>&lt;br&gt;</description>
     </item>
     
