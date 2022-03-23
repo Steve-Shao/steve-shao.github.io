@@ -3,31 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://steve-shao.github.io/en/notes/</loc>
-    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://steve-shao.github.io/en/notes/2021-03-10-lp-duality-copy/</loc>
-    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://steve-shao.github.io/en/</loc>
-    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/en/"
-                />
-  </url>
-  
-  <url>
     <loc>https://steve-shao.github.io/en/docs/</loc>
     <lastmod>2020-10-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -45,6 +20,21 @@
   <url>
     <loc>https://steve-shao.github.io/en/docs/regression/</loc>
     <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steve-shao.github.io/en/</loc>
+    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/en/"
+                />
   </url>
   
   <url>
@@ -72,34 +62,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://steve-shao.github.io/en/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://steve-shao.github.io/en/authors/example-author/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/authors/example-author/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/en/authors/example-author/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://steve-shao.github.io/en/authors/hugo-authors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/authors/hugo-authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/en/authors/hugo-authors/"
                 />
   </url>
   
