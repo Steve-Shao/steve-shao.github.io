@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://steve-shao.github.io/zh/posts/</loc>
-    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://steve-shao.github.io/zh/</loc>
-    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,8 +23,8 @@
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/zh/posts/2022-03-21-%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9-%E6%94%B9%E5%8F%98%E7%9A%84%E8%87%AA%E7%94%B1/</loc>
-    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+    <loc>https://steve-shao.github.io/zh/posts/2022/2022-03-21-%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9-%E6%94%B9%E5%8F%98%E7%9A%84%E8%87%AA%E7%94%B1/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -73,6 +73,16 @@
   </url>
   
   <url>
+    <loc>https://steve-shao.github.io/zh/docs/1-articles/4-%E6%95%99%E8%82%B2%E4%B8%8E%E6%88%90%E9%95%BF/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steve-shao.github.io/zh/docs/2-info/%E8%82%A1%E4%B8%9C%E4%BF%A1/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steve-shao.github.io/zh/posts/2021/2021-03-10-%E9%9A%8F%E7%AC%94-%E5%90%B9%E7%AC%9B%E5%88%B0%E5%A4%A9%E6%98%8E/</loc>
     <lastmod>2021-03-03T00:00:00+00:00</lastmod>
   </url>
@@ -98,7 +108,7 @@
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/zh/docs/2-books/</loc>
+    <loc>https://steve-shao.github.io/zh/docs/2-info/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,6 +128,11 @@
   </url>
   
   <url>
+    <loc>https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/</loc>
+    <lastmod>2015-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/</loc>
     <lastmod>2015-09-21T00:00:00+00:00</lastmod>
   </url>
@@ -128,7 +143,12 @@
   </url>
   
   <url>
-    <loc>https://steve-shao.github.io/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA/</loc>
+    <loc>https://steve-shao.github.io/zh/posts/2015/2015-07-27-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C2/</loc>
+    <lastmod>2015-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steve-shao.github.io/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C1/</loc>
     <lastmod>2015-05-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -145,6 +165,11 @@
   <url>
     <loc>https://steve-shao.github.io/zh/posts/2015/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/</loc>
     <lastmod>2015-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steve-shao.github.io/zh/posts/2014/2014-12-02-%E9%9A%8F%E7%AC%94-%E7%8F%8D%E6%83%9C%E6%89%8D%E8%83%BD/</loc>
+    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
