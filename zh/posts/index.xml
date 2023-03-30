@@ -8,10 +8,20 @@
     <language>zh</language>
     <copyright>&amp;copy; H. Shao
 </copyright>
-    <lastBuildDate>Mon, 21 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://steve-shao.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>房子</title>
+      <link>https://steve-shao.github.io/zh/posts/2022/2022-06-01-%E6%88%BF%E5%AD%90/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/posts/2022/2022-06-01-%E6%88%BF%E5%AD%90/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;房子&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>徒手攀岩：改变的自由</title>
@@ -106,11 +116,41 @@
     </item>
     
     <item>
+      <title>随笔：败将杂谈（二）</title>
+      <link>https://steve-shao.github.io/zh/posts/2016/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/</link>
+      <pubDate>Sun, 31 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/posts/2016/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;昨晚看完众人推荐的《小森林》，喜欢得不得了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>随笔：败将杂谈（一）</title>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/</link>
+      <pubDate>Sat, 12 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;去年冬天，我几乎把自己逼入了绝境。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>随笔：镜子</title>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-11-01-%E9%9A%8F%E7%AC%94-%E9%95%9C%E5%AD%90/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-11-01-%E9%9A%8F%E7%AC%94-%E9%95%9C%E5%AD%90/</guid>
+      <description>&lt;br&gt;
+&lt;p&gt;我是个自制力很差的人。从去年夏天到美国开始，我几乎每个月都会下定决心健身，却从没坚持超过两个星期。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>我们仨：冷清人世暖被窝</title>
-      <link>https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/</link>
+      <link>https://steve-shao.github.io/zh/posts/2015/2015-10-11-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/</link>
       <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/</guid>
+      <guid>https://steve-shao.github.io/zh/posts/2015/2015-10-11-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/</guid>
       <description>&lt;br&gt;
 &lt;p&gt;我是几个月前忽然想读杨绛。在这之前，只看过她只言片语，隐约觉得是个平实可亲的人。&lt;/p&gt;</description>
     </item>
