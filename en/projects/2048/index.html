@@ -132,6 +132,8 @@
       let moved = false;
 
       sortedTiles.forEach(tile => {
+        if (!tiles.includes(tile)) return; // Skip removed tiles
+
         let newPos = direction === 'up' || direction === 'down' ? tile.y : tile.x;
         let otherAxis = direction === 'up' || direction === 'down' ? tile.x : tile.y;
         let move = true;
