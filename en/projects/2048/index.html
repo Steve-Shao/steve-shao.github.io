@@ -22,6 +22,7 @@
       background-color: #bbada0;
       border-radius: 10px;
       position: relative;
+      touch-action: none;
     }
 
     #game-board {
@@ -99,9 +100,11 @@
     }
 
     function moveTile(tile, newX, newY) {
-      tile.x = newX;
-      tile.y = newY;
-      tile.element.style.transform = `translate(${tile.x * 100}%, ${tile.y * 100}%)`;
+      if (tile.x !== newX || tile.y !== newY) {
+        tile.x = newX;
+        tile.y = newY;
+        tile.element.style.transform = `translate(${tile.x * 100}%, ${tile.y * 100}%)`;
+      }
     }
 
     function mergeTiles(tile1, tile2) {
@@ -115,10 +118,14 @@
 
     function moveTiles(direction) {
       const sortedTiles = tiles.sort((a, b) => {
-        if (direction === 'up' || direction === 'left') {
+        if (direction === 'up') {
           return a.y - b.y || a.x - b.x;
+        } else if (direction === 'down') {
+          return b.y - a.y || a.x - b.x;
+        } else if (direction === 'left') {
+          return a.x - b.x || a.y - b.y;
         } else {
-          return b.y - a.y || b.x - a.x;
+          return b.x - a.x || a.y - b.y;
         }
       });
 
@@ -163,7 +170,9 @@
       });
 
       if (moved) {
-        addRandomTile();
+        setTimeout(() => {
+          addRandomTile();
+        }, 100);
       }
     }
 
@@ -188,11 +197,13 @@
     let touchStartY = null;
 
     function handleTouchStart(event) {
+      event.preventDefault();
       touchStartX = event.touches[0].clientX;
       touchStartY = event.touches[0].clientY;
     }
 
     function handleTouchEnd(event) {
+      event.preventDefault();
       const touchEndX = event.changedTouches[0].clientX;
       const touchEndY = event.changedTouches[0].clientY;
       const diffX = touchStartX - touchEndX;
