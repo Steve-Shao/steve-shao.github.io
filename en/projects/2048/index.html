@@ -70,6 +70,15 @@
     const gameBoard = document.getElementById("game-board");
     let tiles = [];
 
+    function checkSuccess() {
+      for (const tile of tiles) {
+        if (tile.value === 2048) {
+          window.location.href = 'success.html'; // Replace 'success.html' with the URL of your success page.
+          break;
+        }
+      }
+    }
+
     function createTile(value, x, y) {
       const tile = document.createElement("div");
       tile.classList.add("tile");
@@ -114,6 +123,8 @@
 
       gameBoard.removeChild(tile2.element);
       tiles.splice(tiles.indexOf(tile2), 1);
+
+      checkSuccess();
     }
 
     function moveTiles(direction) {
