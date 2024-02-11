@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://steve-shao.github.io/en/posts/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/en/posts/"
+                />
+  </url><url>
+    <loc>https://steve-shao.github.io/en/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/en/"
+                />
+  </url><url>
+    <loc>https://steve-shao.github.io/en/posts/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://steve-shao.github.io/en/docs/</loc>
     <lastmod>2020-10-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -15,29 +43,10 @@
                 hreflang="en"
                 href="https://steve-shao.github.io/en/docs/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://steve-shao.github.io/en/docs/regression/</loc>
     <lastmod>2020-10-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://steve-shao.github.io/en/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/en/"
-                />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://steve-shao.github.io/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -49,9 +58,7 @@
                 hreflang="en"
                 href="https://steve-shao.github.io/en/authors/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://steve-shao.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -63,9 +70,7 @@
                 hreflang="en"
                 href="https://steve-shao.github.io/en/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://steve-shao.github.io/en/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -77,9 +82,7 @@
                 hreflang="en"
                 href="https://steve-shao.github.io/en/series/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://steve-shao.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -92,5 +95,4 @@
                 href="https://steve-shao.github.io/en/tags/"
                 />
   </url>
-  
 </urlset>

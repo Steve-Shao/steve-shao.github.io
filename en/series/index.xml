@@ -7,10 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; H. Shao
-</copyright>
-    
-	<atom:link href="https://steve-shao.github.io/en/series/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+</copyright><atom:link href="https://steve-shao.github.io/en/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
