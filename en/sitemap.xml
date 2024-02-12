@@ -2,37 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://steve-shao.github.io/en/posts/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/en/posts/"
-                />
+    <loc>https://steve-shao.github.io/en/docs/control/1-finite-time/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://steve-shao.github.io/en/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/en/"
-                />
+    <loc>https://steve-shao.github.io/en/docs/control/</loc>
+    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://steve-shao.github.io/en/posts/selecting-cloud-gpu/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+    <loc>https://steve-shao.github.io/en/docs/tools/</loc>
+    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://steve-shao.github.io/en/docs/control/3-hidden-states/</loc>
+    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://steve-shao.github.io/en/research/</loc>
+    <lastmod>2024-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://steve-shao.github.io/en/docs/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -44,7 +30,35 @@
                 href="https://steve-shao.github.io/en/docs/"
                 />
   </url><url>
-    <loc>https://steve-shao.github.io/en/docs/regression/</loc>
+    <loc>https://steve-shao.github.io/en/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/en/"
+                />
+  </url><url>
+    <loc>https://steve-shao.github.io/en/docs/tools/selecting-cloud-gpu/</loc>
+    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://steve-shao.github.io/en/projects/</loc>
+    <lastmod>2023-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://steve-shao.github.io/en/projects/wallpaper-generator/wallpaper-from-quote/</loc>
+    <lastmod>2023-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://steve-shao.github.io/en/projects/game-2048/ai-made-2048-game/</loc>
+    <lastmod>2023-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://steve-shao.github.io/en/docs/control/1-finite-time/chapter-1/</loc>
+    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://steve-shao.github.io/en/docs/control/1-finite-time/chapter-2/</loc>
     <lastmod>2020-10-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://steve-shao.github.io/en/authors/</loc>

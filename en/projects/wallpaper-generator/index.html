@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P128HE04M7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P128HE04M7');
+    </script>
+    <title>Wallpaper From Quote</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Palatino&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Times&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        body {
+            padding: 20px;
+            background-color: #F5F5F5;
+            font-family: 'Palatino', serif;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            width: 100%;
+        }
+        #previewImage {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <h1 class="text-center">Wallpaper From Quote</h1>
+        <br><br>
+        <div class="form-row">
+            <div class="form-group col-sm-3">
+                <label for="colorPicker">Background</label>
+                <input type="color" id="colorPicker" class="form-control" value="#471C77">
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="quoteColor">Quote Color</label>
+                <input type="color" id="quoteColor" class="form-control" value="#9A83DB">
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="canvasWidth">Canvas Width</label>
+                <input type="number" id="canvasWidth" class="form-control" value="2560">
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="canvasHeight">Canvas Height</label>
+                <input type="number" id="canvasHeight" class="form-control" value="1600">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="quoteText">Quote Text (Note: Text does not wrap. Use line breaks manually.)</label>
+            <textarea id="quoteText" class="form-control" rows="4">Gentle Steady Effort</textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-3">
+                <label for="fontChoice">Font Choice</label>
+                <select id="fontChoice" class="form-control">
+                    <option value="Palatino">Palatino</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Oswald">Oswald</option>
+                    <option value="Times">Times</option>
+                    <option value="Lato">Lato</option>
+                    <option value="Slabo">Slabo</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Open Sans">Open Sans</option>
+                    <option value="Montserrat">Montserrat</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="fontSize">Font Size</label>
+                <input type="number" id="fontSize" class="form-control" value="100">
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="boldFont">Bold Font</label>
+                <input type="checkbox" id="boldFont" class="form-control" value="bold" checked>
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="italicFont">Italic Font</label>
+                <input type="checkbox" id="italicFont" class="form-control" value="italic">
+            </div>
+        </div>
+        <br><br>
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+            <div id="wallpaperPreview" style="width: 100%;">
+                <img style="width: 100%;" id="previewImage">
+            </div>
+        </div>
+        <br><br>
+        <div style="width: 100%; text-align: center;">
+            <button onclick="downloadWallpaper()" class="btn btn-primary" style="width: 100%; background-color: #343a40;">Download Wallpaper</button>
+        </div>
+        <br><br>
+    </div>
+    <script>
+        function generateWallpaper() {
+            var color = document.getElementById('colorPicker').value;
+            var quote = document.getElementById('quoteText').value.split('\n');
+            var quoteColor = document.getElementById('quoteColor').value;
+            var canvasWidth = document.getElementById('canvasWidth').value;
+            var canvasHeight = document.getElementById('canvasHeight').value;
+            var fontChoice = document.getElementById('fontChoice').value;
+            var boldFont = document.getElementById('boldFont').checked ? "bold " : "";
+            var italicFont = document.getElementById('italicFont').checked ? "italic " : "";
+            var fontSize = document.getElementById('fontSize').value;
+            var canvas = document.createElement('canvas');
+            canvas.width = canvasWidth;
+            canvas.height = canvasHeight;
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = quoteColor;
+            ctx.font = boldFont + italicFont + fontSize + "px " + fontChoice;
+            var lineHeight = fontSize * 1.2; // Assuming a line-height of 1.2
+            var initialHeight = (canvas.height - (lineHeight * (quote.length - 1))) / 2;
+            var textWidth;
+            for (var i = 0; i < quote.length; i++) {
+                textWidth = ctx.measureText(quote[i]).width;
+                ctx.fillText(quote[i], (canvas.width - textWidth) / 2, initialHeight + (i * lineHeight));
+            }
+
+            var img = document.createElement('img'); // Create new img element
+            img.src = canvas.toDataURL(); // Set its src to the canvas data URL
+            document.getElementById('previewImage').src = canvas.toDataURL();
+        }
+
+        window.onload = function() {
+            generateWallpaper();
+
+            // Get all input elements
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].addEventListener('input', generateWallpaper);
+            }
+
+            // Get all select elements
+            var selects = document.getElementsByTagName('select');
+            for (var i = 0; i < selects.length; i++) {
+                selects[i].addEventListener('change', generateWallpaper);
+            }
+
+            // Get all textarea elements
+            var textareas = document.getElementsByTagName('textarea');
+            for (var i = 0; i < textareas.length; i++) {
+                textareas[i].addEventListener('input', generateWallpaper);
+            }
+        }
+
+        function downloadWallpaper() {
+            generateWallpaper(); // Generate the wallpaper first
+
+            var link = document.createElement('a');
+            link.download = 'wallpaper.png';
+            link.href = document.getElementById('previewImage').src;
+            link.click();
+        }
+    </script>
+</body>
+</html>
