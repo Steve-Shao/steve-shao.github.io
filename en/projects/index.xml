@@ -8,21 +8,26 @@
     <language>en</language>
     <copyright>&amp;copy; H. Shao
 </copyright>
-    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://steve-shao.github.io/en/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://steve-shao.github.io/en/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crafting Personalized Wallpapers with Your Favorite Quotes</title>
       <link>https://steve-shao.github.io/en/projects/wallpaper-generator/wallpaper-from-quote/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://steve-shao.github.io/en/projects/wallpaper-generator/wallpaper-from-quote/</guid>
-      <description>&lt;br&gt;&#xA;&lt;p&gt;This project is a simple, single-page web application that allows users to create custom wallpapers from text quotes. The application is built using HTML, CSS, and JavaScript.&lt;/p&gt;</description>
+      <description>&lt;br&gt;
+&lt;p&gt;This project is a simple, single-page web application that allows users to create custom wallpapers from text quotes. The application is built using HTML, CSS, and JavaScript.&lt;/p&gt;</description>
     </item>
+    
     <item>
       <title>Crafting a 2048 Game with AI&#39;s Help</title>
       <link>https://steve-shao.github.io/en/projects/game-2048/ai-made-2048-game/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://steve-shao.github.io/en/projects/game-2048/ai-made-2048-game/</guid>
-      <description>&lt;p&gt;My discovery of the AI code editor &lt;a href=&#34;https://cursor.sh/&#34;&gt;Cursor&lt;/a&gt; was nothing short of a revelation, given its remarkable capabilities.&#xA;Inspired, I decided to challenge it with the creation of a simple game: 2048.&lt;/p&gt;</description>
+      <description>&lt;p&gt;My discovery of the AI code editor &lt;a href=&#34;https://cursor.sh/&#34;&gt;Cursor&lt;/a&gt; was nothing short of a revelation, given its remarkable capabilities.
+Inspired, I decided to challenge it with the creation of a simple game: 2048.&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>
