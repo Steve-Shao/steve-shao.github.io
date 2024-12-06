@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Hongzhang Shao</title>
+    <link>https://steve-shao.github.io/categories/Math/</link>
+    <description>Recent content in Math on Hongzhang Shao</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://steve-shao.github.io/categories/Math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Linear Quadratic Regulator (LQR) in the Context of Markov Decision Processes (MDP)</title>
+      <link>https://steve-shao.github.io/posts/2023/understanding-lqr/</link>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/posts/2023/understanding-lqr/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

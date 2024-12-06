@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/posts/2023/understanding-lqr/">
+  <meta property="og:site_name" content="Hongzhang Shao">
+  <meta property="og:title" content="Understanding Linear Quadratic Regulator (LQR) in the Context of Markov Decision Processes (MDP)">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-11-27T00:00:00+00:00">
+<title>Understanding Linear Quadratic Regulator (LQR) in the Context of Markov Decision Processes (MDP) | Hongzhang Shao</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://steve-shao.github.io/posts/2023/understanding-lqr/">
+<link rel="stylesheet" href="/book.min.25da945b89df400cc5b93dc779decc241b104c950d0a442b08b14587a18fd67b.css" integrity="sha256-JdqUW4nfQAzFuT3Hed7MJBsQTJUNCkQrCLFFh6GP1ns=" crossorigin="anonymous"><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Hongzhang Shao</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" checked />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/zh/">
+          中文
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>-----</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/research/" class="">Research</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/projects/" class="">Projects</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Steve-Shao"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://scholar.google.com/citations?user=WpM1SiwAAAAJ&amp;hl"  target="_blank" rel="noopener">
+        Scholar
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/hongzhangshao/"  target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+  </li>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        ​
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/"  >
+        All Notes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Understanding Linear Quadratic Regulator (LQR) in the Context of Markov Decision Processes (MDP)</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#deterministic-system">Deterministic System:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h2>
+    Understanding Linear Quadratic Regulator (LQR) in the Context of Markov Decision Processes (MDP)
+  </h2>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2023-11-27</span>
+  </div>
+
+
+
+  
+  <div class="text-small">
+    
+      <a href="/categories/Math/">Math</a>
+  </div>
+  
+
+  
+
+
+  <div class="book-post-content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+<h2 id="deterministic-system">
+  Deterministic System:
+  <a class="anchor" href="#deterministic-system">#</a>
+</h2>
+<ul>
+<li><strong>States</strong>: $x_{t}$ (the state of the system at time $t$)</li>
+<li><strong>Actions</strong>: $u_{t}$ (the control input at time $t$)</li>
+<li><strong>Transition Dynamics</strong>:
+$$
+x_{t+1} = Ax_{t} + Bu_{t}
+$$</li>
+<li><strong>Cost Function</strong> (at time $t$): $c(x_{t}, u_{t}) = x_{t}^{\top} Q x_{t} + u_{t}^{\top} R u_{t}$
+<ul>
+<li>In the context of MDPs, we usually aim to maximize rewards.
+However, in this case, we&rsquo;re minimizing cost, which is essentially the same as maximizing the negative of the cost.</li>
+</ul>
+</li>
+<li><strong>Value Function</strong>: (from time $t$ onward):
+<ul>
+<li>In MDPs, the value function $V_{t}(x_{t})$ signifies the expected optimal cumulative reward (or cost) from $t$ onward (starting from state $x_{t}$ and following the optimal action sequence onward).
+$$
+V_{t}(x_{t}) = \min_{{u_{t}}} \left[ \sum_{t} c(x_{t}, u_{t}) \right]
+$$</li>
+</ul>
+</li>
+<li><strong>The Bellman Equation</strong>: (at time $t$):
+<ul>
+<li>The Bellman equation provides a recursive relationship for the value function.
+This equation implies that the value of being in state $x_{t}$ and taking the optimal action $u_{t}$ is the immediate cost $c(x_{t}, u_{t})$ plus the value of the subsequent state, $V_{t+1}(Ax_{t} + Bu_{t})$.</li>
+<li>Here, the subsequent state is determined by the current state and action via the system dynamics.
+$$
+V_{t}(x_{t}) = \min_{u_{t}} \left[ c(x_{t}, u_{t}) + V_{t+1}(Ax_{t} + Bu_{t}) \right]
+$$</li>
+</ul>
+</li>
+</ul>
+<p>In the infinite horizon scenario, the value function is not explicitly dependent on time $t$, hence we denote it as $V(x)$.
+Thus, the Bellman equation simplifies to:
+$$
+V(x) = \min_{u} \left( x^{\top} Q x + u^{\top} R u + V(Ax + Bu) \right)
+$$</p>
+<p>Assuming a quadratic form for the value function, $V(x) = x^{\top} P x$, and substituting this into the Bellman equation.
+The optimal control law $u^*$ that minimizes the right-hand side of the Bellman equation is then given by:</p>
+<p>$$
+u^* = - (R + B^{\top} P B)^{-1} B^{\top} P A x
+$$</p>
+<p>This leads to the Algebraic Riccati Equation (ARE):</p>
+<p>$$
+P = Q + A^{\top} P A - A^{\top} P B (R + B^{\top} P B)^{-1} B^{\top} P A
+$$</p>
+<p>which can be used to solve for $P$.</p>
+<p>Note that this $u^*$ is the linear state feedback control law $Kx$, where</p>
+<p>$$
+K = -(R + B^{\top} P B)^{-1} B^{\top} P A
+$$</p></div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#deterministic-system">Deterministic System:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

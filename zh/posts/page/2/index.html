@@ -1,711 +1,501 @@
 <!DOCTYPE html>
-<html
-  lang="zh"
-  dir="ltr"
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/zh/posts/">
+  <meta property="og:site_name" content="Hongzhang Shao">
+  <meta property="og:title" content="博客文章">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="website">
+<title>博客文章 | Hongzhang Shao</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://steve-shao.github.io/zh/posts/">
+  <link rel="alternate" hreflang="en" href="https://steve-shao.github.io/posts/" title="All Notes">
+<link rel="stylesheet" href="/book.min.25da945b89df400cc5b93dc779decc241b104c950d0a442b08b14587a18fd67b.css" integrity="sha256-JdqUW4nfQAzFuT3Hed7MJBsQTJUNCkQrCLFFh6GP1ns=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://steve-shao.github.io/zh/posts/index.xml" title="Hongzhang Shao" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
   
-><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/zh/"><span>Hongzhang Shao</span>
+  </a>
+</h2>
 
 
-<title>H. Shao</title>
 
-<meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://steve-shao.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
-<script defer src="https://steve-shao.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
 
+  
 
 
 
+  
+    
+  
 
 
+  
 
 
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" checked />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        中文
+      </a>
+    </label>
 
+    <ul>
+      
+      <li>
+        <a href="/posts/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
 
 
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
-  as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/solarized-light.min.css"
-   media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
-   crossorigin></script>
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
-     crossorigin></script>
-<link rel="stylesheet" href="https://steve-shao.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
-
-
-<script defer type="text/javascript" src="https://steve-shao.github.io/js/fontawesome.min.7ecdf591e18d9b7d9a9acfee01f5545be9b15d3fb9a6235fc83f0f7b48df77c7d3fd123037395d75224bf17af86143c1.js"></script>
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
-  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
-   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false },
-        { left: "\\[", right: "\\]", display: true }
-      ],
-    });
-  });
-</script>
 
 
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160667470-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'UA-160667470-1');
-</script>
 
 
 
-<meta name="description"
-  content="博客文章发表于微信公众号“猫中堂”，已进行原创保护，请勿转载。">
 
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
 
+  
+    <span>-----</span>
+  
 
-<script type="application/ld+json">
-{
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[{
-            "@type":"ListItem",
-            "position":  1 ,
-            "name": "随笔：败将杂谈（二）",
-            "description": "\u003cbr\u003e\n\u003cp\u003e昨晚看完众人推荐的《小森林》，喜欢得不得了。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2016/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/"
-        },{
-            "@type":"ListItem",
-            "position":  2 ,
-            "name": "随笔：败将杂谈（一）",
-            "description": "\u003cbr\u003e\n\u003cp\u003e去年冬天，我几乎把自己逼入了绝境。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/"
-        },{
-            "@type":"ListItem",
-            "position":  3 ,
-            "name": "随笔：镜子",
-            "description": "\u003cbr\u003e\n\u003cp\u003e我是个自制力很差的人。从去年夏天到美国开始，我几乎每个月都会下定决心健身，却从没坚持超过两个星期。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-11-01-%E9%9A%8F%E7%AC%94-%E9%95%9C%E5%AD%90/"
-        },{
-            "@type":"ListItem",
-            "position":  4 ,
-            "name": "我们仨：冷清人世暖被窝",
-            "description": "\u003cbr\u003e\n\u003cp\u003e我是几个月前忽然想读杨绛。在这之前，只看过她只言片语，隐约觉得是个平实可亲的人。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-10-11-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/"
-        },{
-            "@type":"ListItem",
-            "position":  5 ,
-            "name": "随笔：运动式的自我治理",
-            "description": "\u003cbr\u003e\n\u003cp\u003e前些日子读到一篇文章，讲的是“运动式治理”；主要谈在法治不健全的国家，政府常常处于周期性的反腐、揽权等运动中，以维系自身的有效统治。也就是说，当正式制度不完善时，就会有大量的“非正式制度”产生，作为正式制度的补充。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/"
-        },{
-            "@type":"ListItem",
-            "position":  6 ,
-            "name": "随笔：胆小鬼之歌",
-            "description": "\u003cbr\u003e\n\u003cp\u003e人有时是很矛盾的。像我，胆小又好奇心旺盛；这两个特点，就构成了一对矛盾。想做的事情很多，鼓起勇气实施了的很少。大部分的时间，都花在斟酌掂量上了。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/"
-        },{
-            "@type":"ListItem",
-            "position":  7 ,
-            "name": "随笔：写在试图为人的日子里（二）",
-            "description": "\u003cbr\u003e\n\u003cp\u003e学着“作为人”，对别人不是问题，对我可是困扰好久的事儿了。说起来也有意思，只要我一想“我是谁”，用不了多久，我想的就变成了“我应该是谁”。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-07-27-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C2/"
-        },{
-            "@type":"ListItem",
-            "position":  8 ,
-            "name": "随笔：写在试图为人的日子里（一）",
-            "description": "\u003cbr\u003e\n\u003cp\u003e清代袁枚所著《子不语》中有这样的记载：\u003c/p\u003e\n\u003cp\u003e对妖而言，无论道行多深，其实都无法化成人形。因为妖无法理解人情。既然从鸟兽而来，自然只在乎生存繁衍；除骨肉血亲之外，只有自己可以相信。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C1/"
-        },{
-            "@type":"ListItem",
-            "position":  9 ,
-            "name": "随笔：秘密的秘密",
-            "description": "\u003cbr\u003e\n\u003cp\u003e秘密是种很厉害的东西。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/"
-        },{
-            "@type":"ListItem",
-            "position":  10 ,
-            "name": "随笔：作为超生命的人类",
-            "description": "\u003cbr\u003e\n\u003cp\u003e人类将作为超生命诞生吗？\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2015/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/"
-        }
-    ]
-}
-</script><meta property="og:title" content="H. Shao" />
-<meta property="og:type" content="website" />
+          
+  <ul>
+    
+  </ul>
 
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
 
+  
+    <a href="/zh/docs/research/" class="">研究</a>
+  
 
-<meta property="og:url" content="https://steve-shao.github.io/zh/posts/" />
+          
+  <ul>
+    
+  </ul>
 
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
 
+  
+    <a href="/zh/docs/projects/" class="">项目</a>
+  
 
+          
+  <ul>
+    
+  </ul>
 
+        </li>
+      
+    
+  </ul>
 
 
 
 
 
-<meta property="og:locale" content="zh" />
 
 
 
 
-<meta property="og:site_name" content="H. Shao" />
 
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Steve-Shao"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://scholar.google.com/citations?user=WpM1SiwAAAAJ&amp;hl"  target="_blank" rel="noopener">
+        Scholar
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/hongzhangshao/"  target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+  </li>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        ​
+      </a>
+  </li>
+  
+  <li>
+    <a href="/zh/posts/"  >
+        博客文章
+      </a>
+  </li>
+  
+</ul>
 
 
 
 
 
-<meta property="og:updated_time" content="2022-06-01T00:00:00&#43;00:00" />
-
-
-
-<meta property="article:section" content="posts" />
-
-
-<link rel="alternate" type="application/rss+xml" href="https://steve-shao.github.io/zh/posts/index.xml" title="H. Shao" />
-
-
-  <body class="flex min-h-screen flex-col">
-    <header
-      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
-    >
-      <div class="mx-auto w-full max-w-screen-xl"><script>
-    let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-    }
-</script>
-<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
-    <a href="/zh/" class="me-6 text-primary-text text-xl font-bold">H. Shao</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <div id="target"
-        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/zh/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">博客文章</a>
-            <a href="/zh/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">归档</a>
-            <a href="/en/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">English Site</a>
-        </div>
-
-        <div class="flex">
-            <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
-                </div>
-                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='lightDarkOptions'>
-                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
-    </div>
 
 </nav>
-<script>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>博客文章</h3>
+
+  <label for="toc-control">
     
-    let element = document.getElementById('lightDarkMode')
-    if (storageColorScheme == null || storageColorScheme == 'Auto') {
-        document.addEventListener('DOMContentLoaded', () => {
-            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
-        })
-    } else if (storageColorScheme == "Light") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'sun')
-        element.firstElementChild.classList.add('fa-sun')
-    } else if (storageColorScheme == "Dark") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'moon')
-        element.firstElementChild.classList.add('fa-moon')
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        getcolorscheme();
-        switchBurger();
-    });
-</script>
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
 </div>
-    </header>
-    <main class="grow pt-16">
-        <div class="pl-scrollbar">
-          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
-  <article class="prose mx-6 my-8">
-  <h1></h1>
-  
-    <p>博客文章发表于微信公众号“猫中堂”，已进行原创保护，请勿转载。</p>
+
 
   
-</article>
-
-  <div class="bg-secondary-bg rounded px-6">
-    <div class="overflow-hidden divide-y">
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2016/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/" class="no-underline">
-    <h3 class="mt-0">随笔：败将杂谈（二）</h3>
-  </a>
+  <aside class="hidden clearfix">
+    
+  <nav>
+  <ul>
   
     
-昨晚看完众人推荐的《小森林》，喜欢得不得了。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2016-01-31</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/" class="no-underline">
-    <h3 class="mt-0">随笔：败将杂谈（一）</h3>
-  </a>
+    <li class="book-section-flat">
+      <strong>Categories</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
   
     
-去年冬天，我几乎把自己逼入了绝境。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-12-12</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>4分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-11-01-%E9%9A%8F%E7%AC%94-%E9%95%9C%E5%AD%90/" class="no-underline">
-    <h3 class="mt-0">随笔：镜子</h3>
-  </a>
-  
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
+          <span>2</span>
+        </li>
+      
+      </ul>
+    </li>
     
-我是个自制力很差的人。从去年夏天到美国开始，我几乎每个月都会下定决心健身，却从没坚持超过两个星期。
+  
+  </ul>
+</nav>
 
-  
 
+  </aside>
   
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-11-01</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
-  </div>
+ 
+      </header>
 
+      
+      
   
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-10-11-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/" class="no-underline">
-    <h3 class="mt-0">我们仨：冷清人世暖被窝</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/">随笔：败将杂谈（一）</a>
+    </h2>
     
-我是几个月前忽然想读杨绛。在这之前，只看过她只言片语，隐约觉得是个平实可亲的人。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-10-11</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>6分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-12-12</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>去年冬天，我几乎把自己逼入了绝境。</p>
+        <a href="/zh/posts/2015/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/" class="no-underline">
-    <h3 class="mt-0">随笔：运动式的自我治理</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-11-01-%E9%9A%8F%E7%AC%94-%E9%95%9C%E5%AD%90/">随笔：镜子</a>
+    </h2>
     
-前些日子读到一篇文章，讲的是“运动式治理”；主要谈在法治不健全的国家，政府常常处于周期性的反腐、揽权等运动中，以维系自身的有效统治。也就是说，当正式制度不完善时，就会有大量的“非正式制度”产生，作为正式制度的补充。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-09-21</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-11-01</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>我是个自制力很差的人。从去年夏天到美国开始，我几乎每个月都会下定决心健身，却从没坚持超过两个星期。</p>
+        <a href="/zh/posts/2015/2015-11-01-%E9%9A%8F%E7%AC%94-%E9%95%9C%E5%AD%90/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/" class="no-underline">
-    <h3 class="mt-0">随笔：胆小鬼之歌</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-10-11-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/">我们仨：冷清人世暖被窝</a>
+    </h2>
     
-人有时是很矛盾的。像我，胆小又好奇心旺盛；这两个特点，就构成了一对矛盾。想做的事情很多，鼓起勇气实施了的很少。大部分的时间，都花在斟酌掂量上了。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-09-01</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-10-11</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>我是几个月前忽然想读杨绛。在这之前，只看过她只言片语，隐约觉得是个平实可亲的人。</p>
+        <a href="/zh/posts/2015/2015-10-11-%E6%88%91%E4%BB%AC%E4%BB%A8-%E5%86%B7%E6%B8%85%E4%BA%BA%E4%B8%96%E6%9A%96%E8%A2%AB%E7%AA%9D/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-07-27-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C2/" class="no-underline">
-    <h3 class="mt-0">随笔：写在试图为人的日子里（二）</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/">随笔：运动式的自我治理</a>
+    </h2>
     
-学着“作为人”，对别人不是问题，对我可是困扰好久的事儿了。说起来也有意思，只要我一想“我是谁”，用不了多久，我想的就变成了“我应该是谁”。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-07-27</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-09-21</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>前些日子读到一篇文章，讲的是“运动式治理”；主要谈在法治不健全的国家，政府常常处于周期性的反腐、揽权等运动中，以维系自身的有效统治。也就是说，当正式制度不完善时，就会有大量的“非正式制度”产生，作为正式制度的补充。</p>
+        <a href="/zh/posts/2015/2015-09-21-%E9%9A%8F%E7%AC%94-%E8%BF%90%E5%8A%A8%E5%BC%8F%E7%9A%84%E8%87%AA%E6%88%91%E6%B2%BB%E7%90%86/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C1/" class="no-underline">
-    <h3 class="mt-0">随笔：写在试图为人的日子里（一）</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/">随笔：胆小鬼之歌</a>
+    </h2>
     
-清代袁枚所著《子不语》中有这样的记载：
-对妖而言，无论道行多深，其实都无法化成人形。因为妖无法理解人情。既然从鸟兽而来，自然只在乎生存繁衍；除骨肉血亲之外，只有自己可以相信。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-05-05</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>4分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-09-01</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>人有时是很矛盾的。像我，胆小又好奇心旺盛；这两个特点，就构成了一对矛盾。想做的事情很多，鼓起勇气实施了的很少。大部分的时间，都花在斟酌掂量上了。</p>
+        <a href="/zh/posts/2015/2015-09-01-%E9%9A%8F%E7%AC%94-%E8%83%86%E5%B0%8F%E9%AC%BC%E4%B9%8B%E6%AD%8C/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/" class="no-underline">
-    <h3 class="mt-0">随笔：秘密的秘密</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-07-27-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C2/">随笔：写在试图为人的日子里（二）</a>
+    </h2>
     
-秘密是种很厉害的东西。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-04-25</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-07-27</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>学着“作为人”，对别人不是问题，对我可是困扰好久的事儿了。说起来也有意思，只要我一想“我是谁”，用不了多久，我想的就变成了“我应该是谁”。</p>
+        <a href="/zh/posts/2015/2015-07-27-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C2/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2015/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/" class="no-underline">
-    <h3 class="mt-0">随笔：作为超生命的人类</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C1/">随笔：写在试图为人的日子里（一）</a>
+    </h2>
     
-人类将作为超生命诞生吗？
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2015-03-20</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-05-05</span>
   </div>
 
+
+
   
 
   
-</div>
 
+
+    <div class="book-post-content"><p>清代袁枚所著《子不语》中有这样的记载：</p>
+<p>对妖而言，无论道行多深，其实都无法化成人形。因为妖无法理解人情。既然从鸟兽而来，自然只在乎生存繁衍；除骨肉血亲之外，只有自己可以相信。</p>
+        <a href="/zh/posts/2015/2015-05-05-%E9%9A%8F%E7%AC%94-%E5%86%99%E5%9C%A8%E8%AF%95%E5%9B%BE%E4%B8%BA%E4%BA%BA%E7%9A%84%E6%97%A5%E5%AD%90%E9%87%8C1/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/">随笔：秘密的秘密</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-04-25</span>
   </div>
 
-  
-</div>
-  </div>
-  
-</div>
 
 
+  
+
+  
+
+
+    <div class="book-post-content"><p>秘密是种很厉害的东西。</p>
+        <a href="/zh/posts/2015/2015-04-25-%E9%9A%8F%E7%AC%94-%E7%A7%98%E5%AF%86%E7%9A%84%E7%A7%98%E5%AF%86/">...</a>
+      
+    </div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/">随笔：作为超生命的人类</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-03-20</span>
   </div>
+
+
+
+  
+
+  
+
+
+    <div class="book-post-content"><p>人类将作为超生命诞生吗？</p>
+        <a href="/zh/posts/2015/2015-03-20-%E9%9A%8F%E7%AC%94-%E4%BD%9C%E4%B8%BA%E8%B6%85%E7%94%9F%E5%91%BD%E7%9A%84%E4%BA%BA%E7%B1%BB/">...</a>
+      
+    </div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2015/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/">越绝书：顺势而为</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2015-01-13</span>
+  </div>
+
+
+
+  
+
+  
+
+
+    <div class="book-post-content"><p>读罢越绝书，印象最深的大概是“节事”两个字。</p>
+        <a href="/zh/posts/2015/2015-01-13-%E8%B6%8A%E7%BB%9D%E4%B9%A6-%E9%A1%BA%E5%8A%BF%E8%80%8C%E4%B8%BA/">...</a>
+      
+    </div>
+  </article>
+  
+
   
     <ul class="pagination pagination-default">
       <li class="page-item">
@@ -730,16 +520,86 @@
         <a href="/zh/posts/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
-
-          </div>
-        </div>
+ 
       
-    </main>
-    <footer class="pl-scrollbar">
-      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
-    <p class="text-sm text-tertiary-text">&copy; H. Shao
- &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</div></div>
-    </footer>
-  </body>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  <nav>
+  <ul>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
+          <span>2</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
+  </ul>
+</nav>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

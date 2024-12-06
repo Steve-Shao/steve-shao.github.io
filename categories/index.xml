@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hongzhang Shao</title>
+    <link>https://steve-shao.github.io/categories/</link>
+    <description>Recent content in Categories on Hongzhang Shao</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://steve-shao.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neural Networks</title>
+      <link>https://steve-shao.github.io/categories/Neural-Networks/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/categories/Neural-Networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Math</title>
+      <link>https://steve-shao.github.io/categories/Math/</link>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/categories/Math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://steve-shao.github.io/categories/Projects/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/categories/Projects/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

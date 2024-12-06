@@ -1,712 +1,512 @@
 <!DOCTYPE html>
-<html
-  lang="zh"
-  dir="ltr"
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/zh/posts/">
+  <meta property="og:site_name" content="Hongzhang Shao">
+  <meta property="og:title" content="博客文章">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="website">
+<title>博客文章 | Hongzhang Shao</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://steve-shao.github.io/zh/posts/">
+  <link rel="alternate" hreflang="en" href="https://steve-shao.github.io/posts/" title="All Notes">
+<link rel="stylesheet" href="/book.min.25da945b89df400cc5b93dc779decc241b104c950d0a442b08b14587a18fd67b.css" integrity="sha256-JdqUW4nfQAzFuT3Hed7MJBsQTJUNCkQrCLFFh6GP1ns=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://steve-shao.github.io/zh/posts/index.xml" title="Hongzhang Shao" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
   
-><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/zh/"><span>Hongzhang Shao</span>
+  </a>
+</h2>
 
 
-<title>H. Shao</title>
 
-<meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://steve-shao.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
-<script defer src="https://steve-shao.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
 
+  
 
 
 
+  
+    
+  
 
 
+  
 
 
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" checked />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        中文
+      </a>
+    </label>
 
+    <ul>
+      
+      <li>
+        <a href="/posts/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
 
 
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
-  as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/solarized-light.min.css"
-   media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
-   crossorigin></script>
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
-     crossorigin></script>
-<link rel="stylesheet" href="https://steve-shao.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
-
-
-<script defer type="text/javascript" src="https://steve-shao.github.io/js/fontawesome.min.7ecdf591e18d9b7d9a9acfee01f5545be9b15d3fb9a6235fc83f0f7b48df77c7d3fd123037395d75224bf17af86143c1.js"></script>
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
-  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
-   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false },
-        { left: "\\[", right: "\\]", display: true }
-      ],
-    });
-  });
-</script>
 
 
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160667470-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'UA-160667470-1');
-</script>
 
 
 
-<meta name="description"
-  content="博客文章发表于微信公众号“猫中堂”，已进行原创保护，请勿转载。">
 
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
 
+  
+    <span>-----</span>
+  
 
-<script type="application/ld+json">
-{
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[{
-            "@type":"ListItem",
-            "position":  1 ,
-            "name": "房子",
-            "description": "\u003cbr\u003e\n\u003cp\u003e房子\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2022/2022-06-01-%E6%88%BF%E5%AD%90/"
-        },{
-            "@type":"ListItem",
-            "position":  2 ,
-            "name": "徒手攀岩：改变的自由",
-            "description": "\u003cbr\u003e\n\u003cp\u003e如何改变一个人？\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2022/2022-03-21-%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9-%E6%94%B9%E5%8F%98%E7%9A%84%E8%87%AA%E7%94%B1/"
-        },{
-            "@type":"ListItem",
-            "position":  3 ,
-            "name": "一个人要像一个国家",
-            "description": "\u003cbr\u003e\n\u003cp\u003e今天咱们来聊聊，怎么能”成功“。\u003c/p\u003e\n\u003cp\u003e听上去可能没啥说服力，毕竟我也不成功。但要聊的这些东西，我觉得还挺有意思的，说不定你也觉得有意思。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2021/2021-04-02-%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%A6%81%E5%83%8F%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6/"
-        },{
-            "@type":"ListItem",
-            "position":  4 ,
-            "name": "随笔：吹笛到天明",
-            "description": "\u003cbr\u003e\n\u003cp\u003e刚进大学时，看到一张招生海报，“文化中国人才计划”，于是去听了宣讲会。听到半截，我忍不住站起来问：“你们讲理想和现实的和解，你们的棱角被磨平了吗？”一句话问得台上面面相觑，大眼瞪小眼。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2021/2021-03-10-%E9%9A%8F%E7%AC%94-%E5%90%B9%E7%AC%9B%E5%88%B0%E5%A4%A9%E6%98%8E/"
-        },{
-            "@type":"ListItem",
-            "position":  5 ,
-            "name": "自卑与超越：父母，子女，不动点",
-            "description": "\u003cbr\u003e\n\u003cp\u003e在我的童年记忆中，大多同龄人不怎么喜欢学习。问原因，说是父母逼得太狠；稍有松懈，轻则唠叨训斥，重则棍棒伺候。如今走入社会，再聊起学习，后悔的人不少。于是大家感慨：原来父母是对的，该好好管孩子的学习，要管得比父母当年更严。\u003c/p\u003e\n\u003cp\u003e会奏效么？\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2021/2021-02-24-%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A-%E4%B8%8D%E5%8A%A8%E7%82%B9/"
-        },{
-            "@type":"ListItem",
-            "position":  6 ,
-            "name": "试答李约瑟之问",
-            "description": "\u003cbr\u003e\n\u003cp\u003e历史的重大演进，常常有量变引起质变的必然性；但其过程形式往往充满偶然。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2020/2020-09-16-%E8%AF%95%E7%AD%94%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE/"
-        },{
-            "@type":"ListItem",
-            "position":  7 ,
-            "name": "解构现代化：太极功夫",
-            "description": "\u003cbr\u003e\n\u003cp\u003e光伏产业刚出现时，基本是欧洲的天下。那时的欧洲，一手“绿色主义”，哄各国都来买光伏；一手“自由贸易”，把竞争对手挨个挤垮。后来中国人进场，直接把产品卖成白菜价，欧洲人才慌了。于是欧洲祭出贸易禁令，一年不许买中国货。一年后？估摸那时中国企业都破产了，去低价收购就好。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2020/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96-%E5%A4%AA%E6%9E%81%E5%8A%9F%E5%A4%AB/"
-        },{
-            "@type":"ListItem",
-            "position":  8 ,
-            "name": "红楼碎碎念：好事来之不易",
-            "description": "\u003cbr\u003e\n\u003cp\u003e有一种说话习惯是“防御性”的；虽然很少在谈“沟通技巧”的书上见到，却是重要的经验。有人说武术是“本能的防御”加上“有序的进攻”，我想说话也是如此。人们喜欢讨论进攻的方法，但防御也许更重要。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2020/2020-07-31-%E7%BA%A2%E6%A5%BC%E7%A2%8E%E7%A2%8E%E5%BF%B5-%E5%A5%BD%E4%BA%8B%E6%9D%A5%E4%B9%8B%E4%B8%8D%E6%98%93/"
-        },{
-            "@type":"ListItem",
-            "position":  9 ,
-            "name": "高铁规划：天降掌法",
-            "description": "\u003cbr\u003e\n\u003cp\u003e有人就有政治；人越多，做事越难。越是要紧事，就越有各种人用各种理由阻挠。对于如何做事，鲁迅先生出过一招。人性喜欢折中调和。你说屋子暗要开窗，大家不许；但你说要拆屋顶，大家就主张开窗了。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2020/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/"
-        },{
-            "@type":"ListItem",
-            "position":  10 ,
-            "name": "随笔：孤独的改革家",
-            "description": "\u003cbr\u003e\n\u003cp\u003e日前一时冲动，换了只新的苹果表。新的设备带来新的动力；这阵子被疫情荒废的健身计划，现在全都恢复了生机。为了趁热打铁，我重新整理了日程表，充满激情地开始推动新一轮的“自我改革”。\u003c/p\u003e",
-            "url": "https://steve-shao.github.io/zh/posts/2020/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/"
-        }
-    ]
-}
-</script><meta property="og:title" content="H. Shao" />
-<meta property="og:type" content="website" />
+          
+  <ul>
+    
+  </ul>
 
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
 
+  
+    <a href="/zh/docs/research/" class="">研究</a>
+  
 
-<meta property="og:url" content="https://steve-shao.github.io/zh/posts/" />
+          
+  <ul>
+    
+  </ul>
 
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
 
+  
+    <a href="/zh/docs/projects/" class="">项目</a>
+  
 
+          
+  <ul>
+    
+  </ul>
 
+        </li>
+      
+    
+  </ul>
 
 
 
 
 
-<meta property="og:locale" content="zh" />
 
 
 
 
-<meta property="og:site_name" content="H. Shao" />
 
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Steve-Shao"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://scholar.google.com/citations?user=WpM1SiwAAAAJ&amp;hl"  target="_blank" rel="noopener">
+        Scholar
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/hongzhangshao/"  target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+  </li>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        ​
+      </a>
+  </li>
+  
+  <li>
+    <a href="/zh/posts/"  >
+        博客文章
+      </a>
+  </li>
+  
+</ul>
 
 
 
 
 
-<meta property="og:updated_time" content="2022-06-01T00:00:00&#43;00:00" />
-
-
-
-<meta property="article:section" content="posts" />
-
-
-<link rel="alternate" type="application/rss+xml" href="https://steve-shao.github.io/zh/posts/index.xml" title="H. Shao" />
-
-
-  <body class="flex min-h-screen flex-col">
-    <header
-      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
-    >
-      <div class="mx-auto w-full max-w-screen-xl"><script>
-    let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-    }
-</script>
-<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
-    <a href="/zh/" class="me-6 text-primary-text text-xl font-bold">H. Shao</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <div id="target"
-        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/zh/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">博客文章</a>
-            <a href="/zh/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">归档</a>
-            <a href="/en/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">English Site</a>
-        </div>
-
-        <div class="flex">
-            <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
-                </div>
-                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='lightDarkOptions'>
-                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
-    </div>
 
 </nav>
-<script>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>博客文章</h3>
+
+  <label for="toc-control">
     
-    let element = document.getElementById('lightDarkMode')
-    if (storageColorScheme == null || storageColorScheme == 'Auto') {
-        document.addEventListener('DOMContentLoaded', () => {
-            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
-        })
-    } else if (storageColorScheme == "Light") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'sun')
-        element.firstElementChild.classList.add('fa-sun')
-    } else if (storageColorScheme == "Dark") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'moon')
-        element.firstElementChild.classList.add('fa-moon')
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        getcolorscheme();
-        switchBurger();
-    });
-</script>
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
 </div>
-    </header>
-    <main class="grow pt-16">
-        <div class="pl-scrollbar">
-          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
-  <article class="prose mx-6 my-8">
-  <h1></h1>
-  
-    <p>博客文章发表于微信公众号“猫中堂”，已进行原创保护，请勿转载。</p>
+
 
   
-</article>
-
-  <div class="bg-secondary-bg rounded px-6">
-    <div class="overflow-hidden divide-y">
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2022/2022-06-01-%E6%88%BF%E5%AD%90/" class="no-underline">
-    <h3 class="mt-0">房子</h3>
-  </a>
+  <aside class="hidden clearfix">
+    
+  <nav>
+  <ul>
   
     
-房子
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-06-01</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2022/2022-03-21-%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9-%E6%94%B9%E5%8F%98%E7%9A%84%E8%87%AA%E7%94%B1/" class="no-underline">
-    <h3 class="mt-0">徒手攀岩：改变的自由</h3>
-  </a>
+    <li class="book-section-flat">
+      <strong>Categories</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
   
     
-如何改变一个人？
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-03-21</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>4分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2021/2021-04-02-%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%A6%81%E5%83%8F%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6/" class="no-underline">
-    <h3 class="mt-0">一个人要像一个国家</h3>
-  </a>
-  
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
+          <span>2</span>
+        </li>
+      
+      </ul>
+    </li>
     
-今天咱们来聊聊，怎么能”成功“。
-听上去可能没啥说服力，毕竟我也不成功。但要聊的这些东西，我觉得还挺有意思的，说不定你也觉得有意思。
+  
+  </ul>
+</nav>
 
-  
 
+  </aside>
   
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2021-04-02</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>5分钟阅读时长</span>
-  </div>
+ 
+      </header>
 
+      
+      
   
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2021/2021-03-10-%E9%9A%8F%E7%AC%94-%E5%90%B9%E7%AC%9B%E5%88%B0%E5%A4%A9%E6%98%8E/" class="no-underline">
-    <h3 class="mt-0">随笔：吹笛到天明</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2022/2022-03-21-%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9-%E6%94%B9%E5%8F%98%E7%9A%84%E8%87%AA%E7%94%B1/">徒手攀岩：改变的自由</a>
+    </h2>
     
-刚进大学时，看到一张招生海报，“文化中国人才计划”，于是去听了宣讲会。听到半截，我忍不住站起来问：“你们讲理想和现实的和解，你们的棱角被磨平了吗？”一句话问得台上面面相觑，大眼瞪小眼。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2021-03-03</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>4分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2022-03-21</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>如何改变一个人？</p>
+        <a href="/zh/posts/2022/2022-03-21-%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9-%E6%94%B9%E5%8F%98%E7%9A%84%E8%87%AA%E7%94%B1/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2021/2021-02-24-%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A-%E4%B8%8D%E5%8A%A8%E7%82%B9/" class="no-underline">
-    <h3 class="mt-0">自卑与超越：父母，子女，不动点</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2021/2021-04-02-%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%A6%81%E5%83%8F%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6/">一个人要像一个国家</a>
+    </h2>
     
-在我的童年记忆中，大多同龄人不怎么喜欢学习。问原因，说是父母逼得太狠；稍有松懈，轻则唠叨训斥，重则棍棒伺候。如今走入社会，再聊起学习，后悔的人不少。于是大家感慨：原来父母是对的，该好好管孩子的学习，要管得比父母当年更严。
-会奏效么？
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2021-02-24</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2021-04-02</span>
   </div>
 
+
+
   
 
   
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2020/2020-09-16-%E8%AF%95%E7%AD%94%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE/" class="no-underline">
-    <h3 class="mt-0">试答李约瑟之问</h3>
-  </a>
-  
+  <div class="text-small">
     
-历史的重大演进，常常有量变引起质变的必然性；但其过程形式往往充满偶然。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2020-09-16</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>8分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
+      <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
   </div>
   
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
+
+
+    <div class="book-post-content"><p>今天咱们来聊聊，怎么能”成功“。</p>
+<p>听上去可能没啥说服力，毕竟我也不成功。但要聊的这些东西，我觉得还挺有意思的，说不定你也觉得有意思。</p>
+        <a href="/zh/posts/2021/2021-04-02-%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%A6%81%E5%83%8F%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6/">...</a>
+      
+    </div>
+  </article>
   
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2020/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96-%E5%A4%AA%E6%9E%81%E5%8A%9F%E5%A4%AB/" class="no-underline">
-    <h3 class="mt-0">解构现代化：太极功夫</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2021/2021-03-10-%E9%9A%8F%E7%AC%94-%E5%90%B9%E7%AC%9B%E5%88%B0%E5%A4%A9%E6%98%8E/">随笔：吹笛到天明</a>
+    </h2>
     
-光伏产业刚出现时，基本是欧洲的天下。那时的欧洲，一手“绿色主义”，哄各国都来买光伏；一手“自由贸易”，把竞争对手挨个挤垮。后来中国人进场，直接把产品卖成白菜价，欧洲人才慌了。于是欧洲祭出贸易禁令，一年不许买中国货。一年后？估摸那时中国企业都破产了，去低价收购就好。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2020-09-08</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2021-03-03</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>刚进大学时，看到一张招生海报，“文化中国人才计划”，于是去听了宣讲会。听到半截，我忍不住站起来问：“你们讲理想和现实的和解，你们的棱角被磨平了吗？”一句话问得台上面面相觑，大眼瞪小眼。</p>
+        <a href="/zh/posts/2021/2021-03-10-%E9%9A%8F%E7%AC%94-%E5%90%B9%E7%AC%9B%E5%88%B0%E5%A4%A9%E6%98%8E/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2020/2020-07-31-%E7%BA%A2%E6%A5%BC%E7%A2%8E%E7%A2%8E%E5%BF%B5-%E5%A5%BD%E4%BA%8B%E6%9D%A5%E4%B9%8B%E4%B8%8D%E6%98%93/" class="no-underline">
-    <h3 class="mt-0">红楼碎碎念：好事来之不易</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2021/2021-02-24-%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A-%E4%B8%8D%E5%8A%A8%E7%82%B9/">自卑与超越：父母，子女，不动点</a>
+    </h2>
     
-有一种说话习惯是“防御性”的；虽然很少在谈“沟通技巧”的书上见到，却是重要的经验。有人说武术是“本能的防御”加上“有序的进攻”，我想说话也是如此。人们喜欢讨论进攻的方法，但防御也许更重要。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2020-07-31</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2021-02-24</span>
   </div>
 
+
+
   
 
   
-</div>
 
-  
-</div>
 
-  </div>
-
+    <div class="book-post-content"><p>在我的童年记忆中，大多同龄人不怎么喜欢学习。问原因，说是父母逼得太狠；稍有松懈，轻则唠叨训斥，重则棍棒伺候。如今走入社会，再聊起学习，后悔的人不少。于是大家感慨：原来父母是对的，该好好管孩子的学习，要管得比父母当年更严。</p>
+<p>会奏效么？</p>
+        <a href="/zh/posts/2021/2021-02-24-%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A-%E4%B8%8D%E5%8A%A8%E7%82%B9/">...</a>
+      
+    </div>
+  </article>
   
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2020/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/" class="no-underline">
-    <h3 class="mt-0">高铁规划：天降掌法</h3>
-  </a>
-  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2020/2020-09-16-%E8%AF%95%E7%AD%94%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE/">试答李约瑟之问</a>
+    </h2>
     
-有人就有政治；人越多，做事越难。越是要紧事，就越有各种人用各种理由阻挠。对于如何做事，鲁迅先生出过一招。人性喜欢折中调和。你说屋子暗要开窗，大家不许；但你说要拆屋顶，大家就主张开窗了。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2020-07-30</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2020-09-16</span>
   </div>
 
+
+
   
 
   
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://steve-shao.github.io/zh/posts/2020/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/" class="no-underline">
-    <h3 class="mt-0">随笔：孤独的改革家</h3>
-  </a>
-  
+  <div class="text-small">
     
-日前一时冲动，换了只新的苹果表。新的设备带来新的动力；这阵子被疫情荒废的健身计划，现在全都恢复了生机。为了趁热打铁，我重新整理了日程表，充满激情地开始推动新一轮的“自我改革”。
-
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2020-04-13</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>2分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
+      <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
   </div>
   
-</div>
 
 
+    <div class="book-post-content"><p>历史的重大演进，常常有量变引起质变的必然性；但其过程形式往往充满偶然。</p>
+        <a href="/zh/posts/2020/2020-09-16-%E8%AF%95%E7%AD%94%E6%9D%8E%E7%BA%A6%E7%91%9F%E4%B9%8B%E9%97%AE/">...</a>
+      
+    </div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2020/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96-%E5%A4%AA%E6%9E%81%E5%8A%9F%E5%A4%AB/">解构现代化：太极功夫</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2020-09-08</span>
   </div>
+
+
+
+  
+
+  
+
+
+    <div class="book-post-content"><p>光伏产业刚出现时，基本是欧洲的天下。那时的欧洲，一手“绿色主义”，哄各国都来买光伏；一手“自由贸易”，把竞争对手挨个挤垮。后来中国人进场，直接把产品卖成白菜价，欧洲人才慌了。于是欧洲祭出贸易禁令，一年不许买中国货。一年后？估摸那时中国企业都破产了，去低价收购就好。</p>
+        <a href="/zh/posts/2020/2020-09-08-%E8%A7%A3%E6%9E%84%E7%8E%B0%E4%BB%A3%E5%8C%96-%E5%A4%AA%E6%9E%81%E5%8A%9F%E5%A4%AB/">...</a>
+      
+    </div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2020/2020-07-31-%E7%BA%A2%E6%A5%BC%E7%A2%8E%E7%A2%8E%E5%BF%B5-%E5%A5%BD%E4%BA%8B%E6%9D%A5%E4%B9%8B%E4%B8%8D%E6%98%93/">红楼碎碎念：好事来之不易</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2020-07-31</span>
+  </div>
+
+
+
+  
+
+  
+
+
+    <div class="book-post-content"><p>有一种说话习惯是“防御性”的；虽然很少在谈“沟通技巧”的书上见到，却是重要的经验。有人说武术是“本能的防御”加上“有序的进攻”，我想说话也是如此。人们喜欢讨论进攻的方法，但防御也许更重要。</p>
+        <a href="/zh/posts/2020/2020-07-31-%E7%BA%A2%E6%A5%BC%E7%A2%8E%E7%A2%8E%E5%BF%B5-%E5%A5%BD%E4%BA%8B%E6%9D%A5%E4%B9%8B%E4%B8%8D%E6%98%93/">...</a>
+      
+    </div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2020/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/">高铁规划：天降掌法</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2020-07-30</span>
+  </div>
+
+
+
+  
+
+  
+
+
+    <div class="book-post-content"><p>有人就有政治；人越多，做事越难。越是要紧事，就越有各种人用各种理由阻挠。对于如何做事，鲁迅先生出过一招。人性喜欢折中调和。你说屋子暗要开窗，大家不许；但你说要拆屋顶，大家就主张开窗了。</p>
+        <a href="/zh/posts/2020/2020-07-30-%E9%AB%98%E9%93%81%E8%A7%84%E5%88%92-%E5%A4%A9%E9%99%8D%E6%8E%8C%E6%B3%95/">...</a>
+      
+    </div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2020/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/">随笔：孤独的改革家</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2020-04-13</span>
+  </div>
+
+
+
+  
+
+  
+
+
+    <div class="book-post-content"><p>日前一时冲动，换了只新的苹果表。新的设备带来新的动力；这阵子被疫情荒废的健身计划，现在全都恢复了生机。为了趁热打铁，我重新整理了日程表，充满激情地开始推动新一轮的“自我改革”。</p>
+        <a href="/zh/posts/2020/2020-04-13-%E9%9A%8F%E7%AC%94-%E5%AD%A4%E7%8B%AC%E7%9A%84%E6%94%B9%E9%9D%A9%E5%AE%B6/">...</a>
+      
+    </div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/zh/posts/2016/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/">随笔：败将杂谈（二）</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2016-01-31</span>
+  </div>
+
+
+
+  
+
+  
+
+
+    <div class="book-post-content"><p>昨晚看完众人推荐的《小森林》，喜欢得不得了。</p>
+        <a href="/zh/posts/2016/2015-12-12-%E9%9A%8F%E7%AC%94-%E8%B4%A5%E5%B0%86%E6%9D%82%E8%B0%881/">...</a>
+      
+    </div>
+  </article>
+  
+
   
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -731,16 +531,86 @@
         <a href="/zh/posts/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
-
-          </div>
-        </div>
+ 
       
-    </main>
-    <footer class="pl-scrollbar">
-      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
-    <p class="text-sm text-tertiary-text">&copy; H. Shao
- &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</div></div>
-    </footer>
-  </body>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  <nav>
+  <ul>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
+          <span>2</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
+  </ul>
+</nav>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
