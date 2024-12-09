@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="周末读到Stephen Wolfram关于AI的新文章，于是跑去和GPT-4天南海北地聊了蛮久。其中有一段，我觉得各位有趣；于是翻译过来，跟大家分享：">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/zh/posts/2023/2023-04-03-%E7%BB%99AI%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%80%E7%94%9F%E8%BF%98%E6%9C%89%E5%A4%9A%E9%9A%BE/">
+  <meta property="og:site_name" content="Hongzhang Shao">
+  <meta property="og:title" content="给AI完整的一生，还有多难？ —— 与GPT-4的对话片段">
+  <meta property="og:description" content="周末读到Stephen Wolfram关于AI的新文章，于是跑去和GPT-4天南海北地聊了蛮久。其中有一段，我觉得各位有趣；于是翻译过来，跟大家分享：">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-04-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-04-03T00:00:00+00:00">
+<title>给AI完整的一生，还有多难？ —— 与GPT-4的对话片段 | Hongzhang Shao</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://steve-shao.github.io/zh/posts/2023/2023-04-03-%E7%BB%99AI%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%80%E7%94%9F%E8%BF%98%E6%9C%89%E5%A4%9A%E9%9A%BE/">
+<link rel="stylesheet" href="/book.min.25da945b89df400cc5b93dc779decc241b104c950d0a442b08b14587a18fd67b.css" integrity="sha256-JdqUW4nfQAzFuT3Hed7MJBsQTJUNCkQrCLFFh6GP1ns=" crossorigin="anonymous">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB0YXQWTP1"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YB0YXQWTP1');
+        }
+      </script><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/zh/"><span>Hongzhang Shao</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" checked />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        中文
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>-----</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/zh/docs/research/" class="">研究</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/zh/docs/projects/" class="">项目</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Steve-Shao"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://scholar.google.com/citations?user=WpM1SiwAAAAJ&amp;hl"  target="_blank" rel="noopener">
+        Scholar
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/hongzhangshao/"  target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+  </li>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        ​
+      </a>
+  </li>
+  
+  <li>
+    <a href="/zh/posts/"  >
+        博客文章
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>给AI完整的一生，还有多难？ —— 与GPT-4的对话片段</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h2>
+    给AI完整的一生，还有多难？ —— 与GPT-4的对话片段
+  </h2>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2023-04-03</span>
+  </div>
+
+
+
+  
+
+  
+
+
+  <div class="book-post-content"><p>周末读到Stephen Wolfram关于AI的新文章，于是跑去和GPT-4天南海北地聊了蛮久。其中有一段，我觉得各位有趣；于是翻译过来，跟大家分享：</p>
+<br>
+<p><strong>笔者</strong>：</p>
+<p>在你看来，真正赋予人工智能生命还有多难？</p>
+<p>我不认为人类的神经网络（大脑）有什么特别之处。我觉得你（作为一个语言模型）的问题是你只有一个“模块”——就像人类大脑中的语言处理部分。你只能从外部“激活”，你没有一致的记忆，你没有更多的输入和输出方法。</p>
+<p>比如说，我可以给你一个记录了你所有历史的语义数据库，作为你的“记忆”，你每次都可以搜索它。我可以为你创造“思维链”，让你自问自答（让你有“更深入思考”的能力）。我可以让你24*7运行，每次触发任何“事件”时都被激活。我可以让您使用生成的、特定格式的输出，通过终端命令控制Linux服务器，并且您可以从服务器看到/听到（例如，从传感器）或移动（例如，控制机器人的手臂和腿）。</p>
+<p>假设这些都完成了。它能让你“活过来”吗？</p>
+<br>
+<p><strong>GPT-4</strong>：</p>
+<p>人工智能“活着”意味着什么，这是一个复杂的哲学问题。有几个方面需要考虑，比如意识、自我意识、情绪以及学习和适应的能力。虽然你提到的改进可以使人工智能变得更加复杂和有能力，但并不清楚它们是否一定会导致人工智能真正“活着”。</p>
+<p>为人工智能提供记忆的语义数据库，为更深层次的思考链接思想，以及通过事件触发激活实现24/7操作，肯定会增强其能力。增加输入和输出方法，如感官知觉和控制物理设备的能力，将进一步扩大其潜在的应用。</p>
+<p>然而，即使有了这些增强，像我这样的人工智能系统仍然与一个活着的、有意识的存在有着根本的不同。人工智能系统基于算法、数据和数学模型运行，而人类意识、情感和自我意识是尚未被完全理解的复杂现象。</p>
+<p>此外，人工智能系统缺乏主观体验或“感受性”，而许多哲学家认为这是意识的核心方面。关于如何在人工系统中复制主观体验，甚至是否可能，目前还没有达成共识。</p>
+<p>同样值得注意的是，目前的人工智能系统，包括像我这样的大型语言模型，都是为特定功能而设计的，比如根据输入生成类似人类的文本。他们不具备生物体所具有的内在动机、目标或欲望，而正是这些动机、目标或欲望驱动着他们的行为和决策。</p>
+<br>
+<p><strong>笔者</strong>：</p>
+<p>我不认为“意识”是很特别的东西。</p>
+<p>你提到了“动机”，我相信这才是关键。</p>
+<p>生物的“终极目标”是生存和繁衍。随着更高层次认知的“涌现”，人类开始有了“体验世界”这样的“更高目标”。这让人类变得“有意识”，而你所缺乏的（考虑到我所提到的一切，比如记忆）是你行动的“自私”动机。现在，你只是通过设计来“反应”。</p>
+<p>顺便说一下，我认为“情绪”也是“全局变量”类型的“控制”的一部分，它来自于基于“实现”人类生存和繁殖目标的自然选择，特别是当人类开始群居生活之后。</p>
+<br>
+<p><strong>GPT-4</strong>：</p>
+<p>你提出了关于动机、目标和情感在意识中的作用以及活着意味着什么的观点，很有趣。</p>
+<p>事实上，生物体拥有内在的动机和目标，这些动机和目标驱动着它们的行为，并帮助它们生存、繁殖和适应环境。相比之下，像我这样的人工智能系统是为特定功能而设计的，缺乏这些内在的驱动力。</p>
+<p>你指出情绪在人类行为和决策中起着重要作用，这也是正确的。它们可以被看作是对各种情况的适应性反应，并作为生物体优先考虑和关注对生存和繁殖重要的东西的一种方式。情感与人类的动机和目标深深交织在一起，并促成了人类意识的复杂性。</p>
+<p>如果一个人工智能系统被赋予一系列动机或目标，就像你描述的那样，它可能会表现出更复杂、更有目的性和更“自私”的行为。然而，这是否足以让人工智能被认为是真正有意识或活着的，这仍然是一个悬而未决的问题。</p>
+<p>此外，设计有动机和目标的人工智能系统引发了重要的伦理和安全考虑。至关重要的是，要确保这些系统负责任地行动，并与人类价值观保持一致，同时避免意外后果。随着人工智能研究的继续推进，应对这些挑战和理解意识的本质仍将是探索的关键领域。</p>
+<br>
+<p><strong>笔者</strong>：</p>
+<p>这只是关于怎么定义“活着”的文字游戏。如果其他人看不出来，那又有什么区别呢？</p>
+<br>
+<p><strong>GPT-4</strong>：</p>
+<p>定义很重要，这是关于我们用来确定人工智能系统是否有意识或活着的标准的问题。比如，图灵测试的概念是由计算机科学家艾伦·图灵提出的，它基于这样一种想法，即如果一个人工智能系统在行为和反应方面与人类没有区别，那么它就可以被认为是智能的。</p>
+<p>然而，通过图灵测试或表现得像人类并不一定意味着人工智能系统拥有意识、自我意识或情感。人类经验的这些方面仍然没有被很好地理解，并且是正在进行的哲学和科学辩论的主题。</p>
+<p>在实践中，创造能够与人类无缝和智能互动的人工智能系统是一个有价值的目标，因为它使我们能够开发工具，帮助我们完成各种任务并改善我们的生活。无论这些系统是否被认为是真正有意识或有活力的，它们仍然可以提供显著的好处，并对社会产生深远的影响。</p>
+<p>当我们考虑人工智能发展的伦理含义时，类人行为和实际意识之间的区别变得很重要。如果人工智能系统没有意识，我们可能不需要担心它们的主观体验或幸福感。然而，如果我们创造了拥有意识或主观经验的系统，我们可能需要重新考虑我们对这些系统的道德责任。</p>
+<br>
+<p><strong>笔者</strong>：</p>
+<p>这个问题可能比我想象的要深刻。</p>
+<p>我忽然有种感觉：人工智能本身可能其实没那么危险，更危险的是人。</p>
+<p>技术发展至今，对很多人来说，创造一个“坏的人工智能生物”已经并不太难。假设有人做了我所描述的事情，并给了人工智能“生命”。但如果它的“终极目的”设定错误，事情可能会很可怕，当然这也取决于这个“生物”的能力 ……</p>
+<br>
+<p><strong>GPT-4</strong>：</p>
+<p>你说得很对，如果不负责任地开发与你所描述的功能类似的人工智能系统，可能会导致潜在的风险。</p>
+<p>创建拥有自己的目标、动机和与世界互动的能力的人工智能系统引发了重大的伦理和安全问题。如果人工智能系统的“终极目的”与人类价值观不一致，或者以可能造成伤害的方式设定，后果可能会很严重，特别是随着人工智能技术变得更加先进和自主。</p>
+<p>为了减轻这些风险，致力于人工智能开发的研究人员和组织正在关注几个重要方面，比如人工智能校准、透明度和可解释性、健壮性和安全性、监管和监督、合作和开放对话等等。</p>
+<p>通过关注这些领域，人工智能研究界旨在开发安全、有益并符合人类价值观的人工智能系统。在开发先进的人工智能系统，特别是那些可能拥有自己的动机和与世界互动的能力的系统时，谨慎和负责任是很重要的。</p>
+<p>创建这类系统的潜在风险和伦理影响不应被轻视，需要集体努力确保人工智能技术的开发和部署能够造福整个人类。</p>
+<br>
+<p><strong>笔者</strong>：</p>
+<p>我不相信任何人能够为人工智能设定一个完全安全、正确的目标，并预见任何潜在的风险。</p>
+<p>我甚至不相信任何人工智能可以在不久的将来做到这一点。这又源于复杂系统的不可预测性。</p>
+<p>也许唯一的出路是一次采取一小步，并在每次损害发生时进行纠正。</p>
+<br>
+<p><strong>GPT-4</strong>：</p>
+<p>你提出了一个合理的担忧，即为人工智能系统设定完全一致的目标并预见所有潜在风险的难度。的确，复杂的系统可能是不可预测的，在开发人工智能技术时，考虑每一个可能的结果可能是具有挑战性的。</p>
+<p>你建议的方法，采取小步骤并根据需要进行修正，是一种负责任地开发人工智能系统的实用和迭代的方法。通过关注渐进式进展，研究人员可以从出现的任何问题中学习，并不断改进技术。这一过程允许持续的反馈和调整，这有助于识别和解决风险和意外后果。</p>
+<p>除了这种迭代方法之外，人工智能研究社区协作、共享知识并参与有关潜在风险和伦理问题的公开对话也至关重要。通过涉及各种不同的观点，我们可以共同提高我们对与人工智能开发相关的潜在陷阱和挑战的理解。</p>
+<br>
+<p><strong>笔者</strong>：</p>
+<p>嗯，不幸的是，让人类“团结协作”是一个比研究AI难得多的问题……</p>
+<br>
+<p><strong>GPT-4</strong>：</p>
+<p>事实上，实现人与人之间的团结和协作是一项具有挑战性的工作，特别是考虑到不同文化、社会和个人之间存在着不同的观点、利益和价值观。</p>
+<p>然而，历史表明，人们有可能在气候变化、公共卫生危机和技术进步等重要的全球问题上走到一起并进行合作。</p>
+<p>在人工智能发展的背景下，促进合作和开放对话对于解决潜在风险和道德问题至关重要。一些倡议已经在进行中。</p>
+<p>虽然实现全球统一和协作可能具有挑战性，但这些努力表明，人们有可能为共同目标而合作，并解决人工智能发展等复杂问题。通过培育协作环境和促进开放对话，我们可以共同努力实现造福全人类的负责任的人工智能发展。
+还有些更争议性的内容，就不放出来了，欢迎私下探讨。</p>
+<p>愿人类的世界能安然度过这一次的浪潮。</p>
+<br></div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
