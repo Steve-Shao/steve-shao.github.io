@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="https://steve-shao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Steps to Start 3D Printing</title>
+      <link>https://steve-shao.github.io/posts/2024/start-3d-printing/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/posts/2024/start-3d-printing/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Buy a 3D printer. As of December 2024, an easiest-to-use printer (and probably the cheapest) is the Bambu A1 mini.&lt;/li&gt;&#xA;&lt;li&gt;Get some basic PLA filament, e.g., from Amazon.&lt;/li&gt;&#xA;&lt;li&gt;Register Bambu account. Install Bambu Studio on computer. Connect printer to computer.&lt;/li&gt;&#xA;&lt;li&gt;Go to &#xA;  &lt;a href=&#34;https://makerworld.com/en/models&#34;&gt;MakerWorld&lt;/a&gt; and find a model to print.&lt;/li&gt;&#xA;&lt;li&gt;Print a test model. I chose the famous &#xA;  &lt;a href=&#34;https://makerworld.com/en/models/15106#profileId-14865&#34;&gt;BENCHY&lt;/a&gt; model.&lt;/li&gt;&#xA;&lt;li&gt;Print something minimal but useful. I chose a &#xA;  &lt;a href=&#34;https://makerworld.com/en/models/786443#profileId-724175&#34;&gt;Clamshell Parts Box&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Print something with support structure. I chose a &#xA;  &lt;a href=&#34;https://makerworld.com/en/models/710637#profileId-641027&#34;&gt;Travel folding clothes hanger&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Try time-lapse video shooting in printing.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>Selecting the Best Cloud GPU Service as of January 2024</title>
       <link>https://steve-shao.github.io/posts/2024/selecting-cloud-gpu/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
