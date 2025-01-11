@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="https://steve-shao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A Concise Manual on How to Write an Optimization Model</title>
+      <link>https://steve-shao.github.io/posts/2025/draft/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/posts/2025/draft/</guid>
+      <description>&lt;p&gt;Here is a concise guide on writing an optimization model.&#xA;It is organized to&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fit the natural flow of a technical interview discussion&lt;/li&gt;&#xA;&lt;li&gt;Serve as a practical reference when collaborating with business or production teams on real-world problems.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The structure combines ideas from software system design process and the AIMMS modeling handbook. See for reference:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;  &lt;a href=&#34;https://www.youtube.com/watch?v=i7twT3x5yv8&#34;&gt;System Design Interview: A Step-By-Step Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;  &lt;a href=&#34;https://documentation.aimms.com/_downloads/AIMMS_modeling.pdf&#34;&gt;AIMMS Modeling Handbook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>Steps to Start 3D Printing</title>
       <link>https://steve-shao.github.io/posts/2024/start-3d-printing/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
