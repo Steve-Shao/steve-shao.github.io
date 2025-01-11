@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Here is a concise guide on writing an optimization model.
+It is organized to
+
+Fit the natural flow of a technical interview discussion
+Serve as a practical reference when collaborating with business or production teams on real-world problems.
+
+The structure combines ideas from software system design process and the AIMMS modeling handbook. See for reference:
+
+
+  System Design Interview: A Step-By-Step Guide
+
+  AIMMS Modeling Handbook
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/posts/2025/optimization-modeling/">
+  <meta property="og:site_name" content="Hongzhang Shao">
+  <meta property="og:title" content="A Concise Manual on How to Write an Optimization Model">
+  <meta property="og:description" content="Here is a concise guide on writing an optimization model. It is organized to
+Fit the natural flow of a technical interview discussion Serve as a practical reference when collaborating with business or production teams on real-world problems. The structure combines ideas from software system design process and the AIMMS modeling handbook. See for reference:
+System Design Interview: A Step-By-Step Guide AIMMS Modeling Handbook">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-10T00:00:00+00:00">
+<title>A Concise Manual on How to Write an Optimization Model | Hongzhang Shao</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://steve-shao.github.io/posts/2025/optimization-modeling/">
+<link rel="stylesheet" href="/book.min.25da945b89df400cc5b93dc779decc241b104c950d0a442b08b14587a18fd67b.css" integrity="sha256-JdqUW4nfQAzFuT3Hed7MJBsQTJUNCkQrCLFFh6GP1ns=" crossorigin="anonymous">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB0YXQWTP1"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YB0YXQWTP1');
+        }
+      </script><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Hongzhang Shao</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" checked />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/zh/">
+          中文
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>-----</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/research/" class="">Research</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/projects/" class="">Projects</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Steve-Shao"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://scholar.google.com/citations?user=WpM1SiwAAAAJ&amp;hl"  target="_blank" rel="noopener">
+        Scholar
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/hongzhangshao/"  target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+  </li>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        ​
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/"  >
+        All Notes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>A Concise Manual on How to Write an Optimization Model</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-understand-the-problem">1. <strong>Understand the Problem</strong></a></li>
+        <li><a href="#2-propose-a-verbal-statement-of-the-model">2. <strong>Propose a Verbal Statement of the Model</strong></a></li>
+        <li><a href="#3-design-deep-dive-model-elements">3. <strong>Design Deep Dive: Model Elements</strong></a></li>
+        <li><a href="#4-summary-and-wrap-up">4. <strong>Summary and Wrap-Up</strong></a></li>
+        <li><a href="#final-notes">Final Notes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h2>
+    A Concise Manual on How to Write an Optimization Model
+  </h2>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2025-01-10</span>
+  </div>
+
+
+
+  
+  <div class="text-small">
+    
+      <a href="/categories/Math/">Math</a>
+  </div>
+  
+
+  
+
+
+  <div class="book-post-content"><p>Here is a concise guide on writing an optimization model.
+It is organized to</p>
+<ul>
+<li>Fit the natural flow of a technical interview discussion</li>
+<li>Serve as a practical reference when collaborating with business or production teams on real-world problems.</li>
+</ul>
+<p>The structure combines ideas from software system design process and the AIMMS modeling handbook. See for reference:</p>
+<ul>
+<li>
+  <a href="https://www.youtube.com/watch?v=i7twT3x5yv8">System Design Interview: A Step-By-Step Guide</a></li>
+<li>
+  <a href="https://documentation.aimms.com/_downloads/AIMMS_modeling.pdf">AIMMS Modeling Handbook</a></li>
+</ul>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+<br>
+<hr>
+<h2 id="1-understand-the-problem">
+  1. <strong>Understand the Problem</strong>
+  <a class="anchor" href="#1-understand-the-problem">#</a>
+</h2>
+<ol start="0">
+<li>
+<p><strong>Pause and think</strong>. (Let the other person know you are thinking.)</p>
+</li>
+<li>
+<p><strong>Gather requirements</strong>. Try re-stating the following in your own words:</p>
+<ul>
+<li><strong>Business Context</strong>: What is the real-world scenario — e.g., scheduling, routing, pricing?</li>
+<li><strong>Key Objectives</strong>: What exactly needs to be optimized — e.g., cost, profit, load?</li>
+<li><strong>Constraints</strong>: Are there regulatory constraints, capacity limits, budget constraints, etc.?</li>
+</ul>
+</li>
+<li>
+<p><strong>Ask clarifying questions and define scope</strong>. Consider:</p>
+<ul>
+<li><strong>Functionality</strong>. Specify the precise format of the input and output.</li>
+<li><strong>Time specification</strong>. Specify the precise time and order that events take place.
+<ul>
+<li>Does this happen in the beginning of the period? or at the end?</li>
+<li>What is the frequency of execution?</li>
+</ul>
+</li>
+<li>What is each element / <strong>terminology</strong> in the business context? <strong>Ask for examples</strong>.
+<ul>
+<li>What is the realistic goal? Do we want approximation or exact solution?</li>
+</ul>
+</li>
+<li>What is the <strong>data availability</strong>?</li>
+<li>Any edge cases?</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Outcome</strong>: <br>
+A clear problem definition and scope. <br>
+Ensure all stakeholders share the same understanding.</p>
+</blockquote>
+<br>
+<hr>
+<h2 id="2-propose-a-verbal-statement-of-the-model">
+  2. <strong>Propose a Verbal Statement of the Model</strong>
+  <a class="anchor" href="#2-propose-a-verbal-statement-of-the-model">#</a>
+</h2>
+<ol start="0">
+<li>
+<p><strong>Call out the name of the model and method</strong> (if any).</p>
+</li>
+<li>
+<p><strong>Draft the Model in Plain Language</strong>, e.g., we aim to:</p>
+<ul>
+<li><strong>optimize</strong> [primary metric]</li>
+<li><strong>by choosing</strong> [key decisions]</li>
+<li><strong>subject to</strong> [key constraints]</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Buy-In from Stakeholders</strong>. Collect feedback on feasibility and correctness before proceeding to a deeper, more technical design.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Outcome</strong>: <br>
+Stakeholder alignment on the high-level objective and constraints. <br>
+Ensure no major requirement is overlooked.</p>
+</blockquote>
+<br>
+<hr>
+<h2 id="3-design-deep-dive-model-elements">
+  3. <strong>Design Deep Dive: Model Elements</strong>
+  <a class="anchor" href="#3-design-deep-dive-model-elements">#</a>
+</h2>
+<p>To move from verbal understanding to a formal mathematical representation, define the following:</p>
+<ol>
+<li><strong>Notations</strong>
+<ol>
+<li><strong>Indices and sets</strong>. Examples:
+<ul>
+<li>$i \in \mathcal{I}$: set of products</li>
+<li>$j \in \mathcal{J}$: set of warehouses</li>
+<li>$t \in \mathcal{T}$: set of time periods</li>
+</ul>
+</li>
+<li><strong>Parameters and Data</strong>:
+<ul>
+<li>$C_{ij}$: unit shipping cost from $i$ to $j$</li>
+<li>$D_{i}$: product $i$ demand</li>
+<li>$M$: large constant for big-M constraints</li>
+</ul>
+</li>
+<li><strong>Decision Variables</strong>:
+<ul>
+<li>$x_{ij}$: units shipped from $i$ to $j$</li>
+<li>$y_{j}$: 1 if warehouse $j$ is open, 0 otherwise</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>Constraints</strong>
+<ol>
+<li><strong>Balancing / linking constraints</strong> that tie decision variables together.</li>
+<li><strong>Problem-specific constraints</strong> derived from business or domain logic.</li>
+<li><strong>Variable type and bounds</strong>, e.g., binary, integer, non-negative, etc..</li>
+</ol>
+</li>
+<li><strong>Objective Function</strong></li>
+</ol>
+<blockquote>
+<p><strong>Outcome</strong>: <br>
+A clear optimization model.</p>
+</blockquote>
+<br>
+<hr>
+<h2 id="4-summary-and-wrap-up">
+  4. <strong>Summary and Wrap-Up</strong>
+  <a class="anchor" href="#4-summary-and-wrap-up">#</a>
+</h2>
+<ol>
+<li><strong>Mathematical statement</strong>: Combine the notations, objective, and constraints into a single cohesive,<strong>symbolic-indexed</strong> form.</li>
+<li><strong>Optional: vectorized / tensorized form</strong>: Re-express the model using matrix/vector notation for more compact representation and faster computation.</li>
+<li><strong>Implementation / Execution Plan</strong>
+<ul>
+<li><strong>Software Tools</strong>: Decide on solver frameworks (e.g., Python + CVXPY + Gurobi, etc.).</li>
+<li><strong>Deployment</strong>: Integration with data pipelines, user interfaces, or scheduling systems.</li>
+<li><strong>Verification</strong>: Plan test cases (minimal representative examples, edge cases, stress tests).</li>
+</ul>
+</li>
+<li><strong>Wrap Up</strong>
+<ul>
+<li>Summarize key trade-offs.</li>
+<li>Revisit alignment with the business problem.</li>
+<li>Outline next steps for iteration or scale-up (e.g., more constraints, refined objective).</li>
+</ul>
+</li>
+</ol>
+<br>
+<hr>
+<h2 id="final-notes">
+  Final Notes
+  <a class="anchor" href="#final-notes">#</a>
+</h2>
+<ul>
+<li><strong>Keep it Clear</strong>: Use simple terms when presenting to non-technical stakeholders.</li>
+<li><strong>Start Small</strong>: Begin with a basic model, test it, then expand.</li>
+<li><strong>Stay Focused</strong>: Keep checking if the model meets business needs as they change.</li>
+</ul></div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-understand-the-problem">1. <strong>Understand the Problem</strong></a></li>
+        <li><a href="#2-propose-a-verbal-statement-of-the-model">2. <strong>Propose a Verbal Statement of the Model</strong></a></li>
+        <li><a href="#3-design-deep-dive-model-elements">3. <strong>Design Deep Dive: Model Elements</strong></a></li>
+        <li><a href="#4-summary-and-wrap-up">4. <strong>Summary and Wrap-Up</strong></a></li>
+        <li><a href="#final-notes">Final Notes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
