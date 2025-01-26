@@ -11,33 +11,20 @@
 
 
   
-  TorchBSDE Solver Package
+  TorchSimulator
   #
 
-This repository implements 
-  Jiequn Han&rsquo;s 
-  DeepBSDE solver in PyTorch. This solver 
-  solves high-dimensional PDEs using deep learning.
-The code has been restructured to work either as an installable Python package or as a git submodule in other projects. Extensive comments and docstrings have been added to enhance readability and understanding of the implementation.
-
-
-
-  
-  DeepBSDE Solver Package in TensorFlow (2.0)
-  #
-
-This repository is a fork of 
-  Jiequn Han&rsquo;s 
-  DeepBSDE solver implementation, which 
-  solves high-dimensional PDEs using deep learning.">
+TorchSimulator is a demonstration framework designed to showcase how parallel, tensorized simulations on GPUs can accelerate performance. It provides a foundation for building custom simulation classes by allowing users to inherit from the provided CTMCSimulator or CTMDPSimulator classes.
+In the tutorial.ipynb provided, we walked through a dynamic scheduling problem for a queueing system, where each sample path spans 17 days (approximately 20,000 events).
+While simulating 10,000 sample paths takes about 10 minutes on CPU (using C&#43;&#43;), GPU acceleration enables running 1,000,000 paths within 15 minutes. This is a 60x speedup.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/docs/projects/">
   <meta property="og:site_name" content="Hongzhang Shao">
   <meta property="og:title" content="Projects">
-  <meta property="og:description" content="Projects # TorchBSDE Solver Package # This repository implements Jiequn Han’s DeepBSDE solver in PyTorch. This solver solves high-dimensional PDEs using deep learning.
-The code has been restructured to work either as an installable Python package or as a git submodule in other projects. Extensive comments and docstrings have been added to enhance readability and understanding of the implementation.
-DeepBSDE Solver Package in TensorFlow (2.0) # This repository is a fork of Jiequn Han’s DeepBSDE solver implementation, which solves high-dimensional PDEs using deep learning.">
+  <meta property="og:description" content="Projects # TorchSimulator # TorchSimulator is a demonstration framework designed to showcase how parallel, tensorized simulations on GPUs can accelerate performance. It provides a foundation for building custom simulation classes by allowing users to inherit from the provided CTMCSimulator or CTMDPSimulator classes.
+In the tutorial.ipynb provided, we walked through a dynamic scheduling problem for a queueing system, where each sample path spans 17 days (approximately 20,000 events).
+While simulating 10,000 sample paths takes about 10 minutes on CPU (using C&#43;&#43;), GPU acceleration enables running 1,000,000 paths within 15 minutes. This is a 60x speedup.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 <title>Projects | Hongzhang Shao</title>
@@ -276,6 +263,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#projects"><strong>Projects</strong></a>
           <ul>
+            <li><a href="#torchsimulatorhttpsgithubcomsteve-shaotorchsimulator"><a href="https://github.com/steve-shao/TorchSimulator"><strong>TorchSimulator</strong></a></a></li>
             <li><a href="#torchbsde-solver-packagehttpsgithubcomsteve-shaotorchbsde-package"><a href="https://github.com/steve-shao/TorchBSDE-Package"><strong>TorchBSDE Solver Package</strong></a></a></li>
             <li><a href="#deepbsde-solver-package-in-tensorflow-20httpsgithubcomsteve-shaodeepbsde-package"><a href="https://github.com/steve-shao/DeepBSDE-Package"><strong>DeepBSDE Solver Package in TensorFlow (2.0)</strong></a></a></li>
             <li><a href="#just-for-fun"><strong>Just for Fun:</strong></a></li>
@@ -299,6 +287,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>Projects</strong>
   <a class="anchor" href="#projects">#</a>
 </h2>
+<br>
+<hr>
+<h3 id="torchsimulatorhttpsgithubcomsteve-shaotorchsimulator">
+  
+  <a href="https://github.com/steve-shao/TorchSimulator"><strong>TorchSimulator</strong></a>
+  <a class="anchor" href="#torchsimulatorhttpsgithubcomsteve-shaotorchsimulator">#</a>
+</h3>
+<p>TorchSimulator is a demonstration framework designed to showcase how parallel, <strong>tensorized simulations on GPUs</strong> can accelerate performance. It provides a foundation for building custom simulation classes by allowing users to inherit from the provided <code>CTMCSimulator</code> or <code>CTMDPSimulator</code> classes.</p>
+<p>In the <code>tutorial.ipynb</code> provided, we walked through a dynamic scheduling problem for a queueing system, where each sample path spans 17 days (approximately 20,000 events).</p>
+<p>While simulating 10,000 sample paths takes about 10 minutes on CPU (using C++), GPU acceleration enables running 1,000,000 paths within 15 minutes. This is a <strong>60x</strong> speedup.</p>
 <br>
 <hr>
 <h3 id="torchbsde-solver-packagehttpsgithubcomsteve-shaotorchbsde-package">
@@ -382,6 +380,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#projects"><strong>Projects</strong></a>
           <ul>
+            <li><a href="#torchsimulatorhttpsgithubcomsteve-shaotorchsimulator"><a href="https://github.com/steve-shao/TorchSimulator"><strong>TorchSimulator</strong></a></a></li>
             <li><a href="#torchbsde-solver-packagehttpsgithubcomsteve-shaotorchbsde-package"><a href="https://github.com/steve-shao/TorchBSDE-Package"><strong>TorchBSDE Solver Package</strong></a></a></li>
             <li><a href="#deepbsde-solver-package-in-tensorflow-20httpsgithubcomsteve-shaodeepbsde-package"><a href="https://github.com/steve-shao/DeepBSDE-Package"><strong>DeepBSDE Solver Package in TensorFlow (2.0)</strong></a></a></li>
             <li><a href="#just-for-fun"><strong>Just for Fun:</strong></a></li>
