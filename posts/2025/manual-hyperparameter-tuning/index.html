@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="Practical framework for tuning neural network hyperparameters in PDE solving applications, with focus on HJB equations and DeepBSDE methods.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/zh/categories/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/posts/2025/manual-hyperparameter-tuning/">
   <meta property="og:site_name" content="Hongzhang Shao">
-  <meta property="og:title" content="Categories">
-  <meta property="og:locale" content="zh">
-  <meta property="og:type" content="website">
-<title>Categories | Hongzhang Shao</title>
+  <meta property="og:title" content="Systematic Hyperparameter Tuning for Neural Network-Based PDE Solvers">
+  <meta property="og:description" content="Practical framework for tuning neural network hyperparameters in PDE solving applications, with focus on HJB equations and DeepBSDE methods.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-31T00:00:00+00:00">
+<title>Systematic Hyperparameter Tuning for Neural Network-Based PDE Solvers | Hongzhang Shao</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="https://steve-shao.github.io/zh/categories/">
-  <link rel="alternate" hreflang="en" href="https://steve-shao.github.io/categories/" title="Categories">
+<link rel="canonical" href="https://steve-shao.github.io/posts/2025/manual-hyperparameter-tuning/">
 <link rel="stylesheet" href="/book.min.25da945b89df400cc5b93dc779decc241b104c950d0a442b08b14587a18fd67b.css" integrity="sha256-JdqUW4nfQAzFuT3Hed7MJBsQTJUNCkQrCLFFh6GP1ns=" crossorigin="anonymous">
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB0YXQWTP1"></script>
       <script>
@@ -30,8 +33,7 @@
           gtag('js', new Date());
           gtag('config', 'G-YB0YXQWTP1');
         }
-      </script><link rel="alternate" type="application/rss+xml" href="https://steve-shao.github.io/zh/categories/index.xml" title="Hongzhang Shao" />
-<!--
+      </script><!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
@@ -46,7 +48,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/zh/"><span>Hongzhang Shao</span>
+  <a class="flex align-center" href="/"><span>Hongzhang Shao</span>
   </a>
 </h2>
 
@@ -62,8 +64,6 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-  
-
 
 <ul class="book-languages">
   <li>
@@ -71,15 +71,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        中文
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="/categories/">
-          English
+        <a href="/zh/">
+          中文
         </a>
       </li>
       
@@ -127,7 +127,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zh/docs/research/" class="">研究</a>
+    <a href="/docs/research/" class="">Research</a>
   
 
           
@@ -145,7 +145,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zh/docs/projects/" class="">项目</a>
+    <a href="/docs/projects/" class="">Projects</a>
   
 
           
@@ -195,8 +195,8 @@ https://github.com/alex-shpak/hugo-book
   </li>
   
   <li>
-    <a href="/zh/posts/"  >
-        博客文章
+    <a href="/posts/"  >
+        All Notes
       </a>
   </li>
   
@@ -227,85 +227,89 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Categories</h3>
+  <h3>Systematic Hyperparameter Tuning for Neural Network-Based PDE Solvers</h3>
 
   <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
-  <aside class="hidden clearfix">
-    
-  <nav>
-  <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/zh/categories/AI/">AI</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
-          <span>2</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
-
-
-  </aside>
-  
  
       </header>
 
       
       
+<article class="markdown book-post">
+  <h2>
+    Systematic Hyperparameter Tuning for Neural Network-Based PDE Solvers
+  </h2>
   
-  <article class="markdown book-post">
-    <h2>
-      <a href="/zh/categories/AI/">AI</a>
-    </h2>
-    
   <div class="flex align-center text-small book-post-date">
     <img src="/svg/calendar.svg" class="book-icon " alt="" />
-    <span>2025-02-26</span>
+    <span>2025-01-31</span>
   </div>
 
 
 
   
-
-  
-
-
-    <p>
-    </p>
-  </article>
+  <div class="text-small">
+    
+      <a href="/categories/Neural-Networks/">Neural Networks</a>
+  </div>
   
 
   
+
+
+  <div class="book-post-content"><p>When working with deep learning methods for partial differential equations (PDEs) like the <strong>Hamilton-Jacobi-Bellman (HJB) equation</strong>, effective hyperparameter tuning proves critical for success. Based on experience with 
+  <a href="https://github.com/Steve-Shao/TorchBSDE-Package">DeepBSDE</a> and Deep Splitting methods, here&rsquo;s my battle-tested key principles:</p>
+<ol>
+<li><strong>Engineering-First Mindset</strong>:
+<ul>
+<li>Start with the minimal interesting example.</li>
+<li>Test one thing at a time through iterative, controlled experiments.</li>
+<li>Focus on incremental improvements, not single, analytical fixes.</li>
+<li>Focus on empirical evidence, not theoretical assumptions.</li>
+<li>Record everything.</li>
+</ul>
+</li>
+<li><strong>Key Metrics Only</strong>:
+<ul>
+<li>Focus only on key metrics (e.g., policy performance) to make decisions.</li>
+<li>Use secondary indicators (loss landscapes, gradient norms, etc.) only for understanding the model.</li>
+</ul>
+</li>
+<li><strong>In-depth, Fact-based Analysis</strong>:
+<ul>
+<li>Focus only and solely on facts, not stories.</li>
+<li>Seek the simplest explanation through first principles.</li>
+</ul>
+</li>
+<li><strong>Use the most straightforward solutions</strong>:
+<ul>
+<li>Use direct fixes, not complex changes.</li>
+<li>Don&rsquo;t fear hard work; it&rsquo;s often the quickest way.</li>
+</ul>
+</li>
+</ol>
+<p>In addition, I have made a note on how to systematically tune the hyperparameters.</p>
+<p>Please refer to this 
+  <a href="hyperparameter-tuning-note/hyperparameter-tuning.pdf">note on hyperparameter tuning</a> below:</p>
+<div class="pdf-container">
+    <iframe
+        src="/hyperparameter-tuning-note/hyperparameter-tuning.pdf#navpanes=0&view=FitH"
+        width="100%"
+        height="1600px"
+        frameborder="0"
+        allowfullscreen
+    >
+        <p>Your browser does not support PDF embeds. Download instead: 
+        <a href="/hyperparameter-tuning-note/hyperparameter-tuning.pdf">PDF Link</a></p>
+    </iframe>
+</div></div>
+</article>
  
       
 
@@ -335,47 +339,6 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  <nav>
-  <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/zh/categories/AI/">AI</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/zh/tags/%E6%B8%A9%E9%93%81%E5%86%9B/">温铁军</a>
-          <span>2</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
-
- 
-      </div>
-    </aside>
     
   </main>
 

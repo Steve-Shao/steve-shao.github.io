@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A cheat sheet for dynamic programming and Markov decision processes.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/posts/2025/stochastic-optimization-cheatsheet/">
+  <meta property="og:site_name" content="Hongzhang Shao">
+  <meta property="og:title" content="A Cheat Sheet for Dynamic Programming and Markov Decision Processes">
+  <meta property="og:description" content="A cheat sheet for dynamic programming and Markov decision processes.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-06T00:00:00+00:00">
+<title>A Cheat Sheet for Dynamic Programming and Markov Decision Processes | Hongzhang Shao</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/posts/2025/stochastic-optimization-cheatsheet/">
+<link rel="stylesheet" href="/book.min.25da945b89df400cc5b93dc779decc241b104c950d0a442b08b14587a18fd67b.css" integrity="sha256-JdqUW4nfQAzFuT3Hed7MJBsQTJUNCkQrCLFFh6GP1ns=" crossorigin="anonymous">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB0YXQWTP1"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YB0YXQWTP1');
+        }
+      </script><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Hongzhang Shao</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" checked />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/zh/">
+          中文
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>-----</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/research/" class="">Research</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/projects/" class="">Projects</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Steve-Shao"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://scholar.google.com/citations?user=WpM1SiwAAAAJ&amp;hl"  target="_blank" rel="noopener">
+        Scholar
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/hongzhangshao/"  target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+  </li>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        ​
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/"  >
+        All Notes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>A Cheat Sheet for Dynamic Programming and Markov Decision Processes</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h2>
+    A Cheat Sheet for Dynamic Programming and Markov Decision Processes
+  </h2>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>2025-02-06</span>
+  </div>
+
+
+
+  
+  <div class="text-small">
+    
+      <a href="/categories/Math/">Math</a>
+  </div>
+  
+
+  
+
+
+  <div class="book-post-content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+<hr>
+<h2 id="dynamic-programming-dp">
+  Dynamic Programming (DP)
+  <a class="anchor" href="#dynamic-programming-dp">#</a>
+</h2>
+<ul>
+<li><strong>Goal</strong>: Solve multi-stage optimization with overlapping subproblems.</li>
+<li><strong>Principle of Optimality</strong>: Optimal solution contains optimal subsolutions.</li>
+<li><strong>Components</strong>:
+<ul>
+<li>State: $s$</li>
+<li>Action: $x$ (decision)</li>
+<li>Transition: $T(s, x) \rightarrow$ next state</li>
+<li>Cost/Reward: $C(s, x)$</li>
+<li>Bellman Equation (Deterministic):<br>
+$V(s) = \min_x [ C(s, x) + V(T(s, x)) ]$</li>
+</ul>
+</li>
+<li><strong>Implementation</strong>:
+<ul>
+<li>Forward/backward recursion, tabulation, memoization.</li>
+</ul>
+</li>
+<li><strong>Examples</strong>: Knapsack, shortest path, inventory control.</li>
+<li><strong>Challenge</strong>: &ldquo;Curse of dimensionality.&rdquo; May need approximations or leveraging structure.</li>
+</ul>
+<br>
+<hr>
+<p><strong>Examples</strong>:</p>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<p><strong>Knapsack</strong>:</p>
+<ul>
+<li>Given n items $(w_i, v_i)$</li>
+<li>Given capacity $W$,</li>
+<li>maximize $\sum v_i$</li>
+<li>subject to $\sum w_i \leq W$.</li>
+<li>$V(i, w) = \max $ <br>
+$V(i-1, w), $ <br>
+$v_i + V(i-1, w-w_i)$ <br>
+if $w_i \leq w;$ <br>
+else $V(i-1, w)$.</li>
+</ul>
+<p><strong>Bottom-Up Tabulation</strong>: <br>
+Fill DP table:</p>
+<ul>
+<li>
+<p>$i = 1, \dots, n$,</p>
+</li>
+<li>
+<p>$w = 0, \dots, W$,</p>
+</li>
+<li>
+<p>Complexity $O(nW)$ <br>
+(pseudo-polynomial time).</p>
+</div>
+</li>
+</ul>
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<p><strong>Shortest Path in DAG</strong></p>
+<ul>
+<li>DAG: Directed Acyclic Graph (edges have direction, no cycles)</li>
+<li>With edge costs $c(i \rightarrow j)$, find $V(j)$: minimal cost from source $s$ to $j$.</li>
+<li>$V(j) = \min_i $ <br>
+$[ V(i) + c(i \rightarrow j) ]$ <br>
+for all edges $i \rightarrow j$.</li>
+</ul>
+<p><strong>Top-Down Memoization</strong>:<br>
+Topological sort of nodes:</p>
+<ul>
+<li>
+<p>Init in-degree (num incoming edges) of each node.</p>
+</li>
+<li>
+<p>Init $V(s)=0$.</p>
+</li>
+<li>
+<p>Init other nodes with in-degree 0 to $V(i)= \infty$.</p>
+</li>
+<li>
+<p>Add all nodes with in-degree 0 to queue.</p>
+</li>
+<li>
+<p>$s$ must have in-degree 0.</p>
+</li>
+<li>
+<p>while queue is not empty:</p>
+<ul>
+<li>remove node $i$ from queue.</li>
+<li>for neighbor $j$ of $i$: <br>
+$V(j) = \min $ <br>
+$V(j), $ <br>
+$V(i) + c(i \rightarrow j)$. <br>
+decrement in-degree of $j$ by 1. <br>
+if in-degree of $j$ is 0, add $j$ to queue.</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<p><strong>Dijkstra&rsquo;s Algorithm</strong></p>
+<ul>
+<li>For graphs with non-negative edge costs</li>
+<li>Finds shortest path from source $s$ to all nodes</li>
+<li>$V(j) = \min$ (current $V(j)$, $V(i) + c(i \rightarrow j)$)<br>
+where $i$ is the current best node</li>
+</ul>
+<p><strong>Implementation Steps</strong>:</p>
+<ul>
+<li>
+<p>Initialize $V(s) = 0$, all other $V(j) = \infty$</p>
+</li>
+<li>
+<p>Create priority queue ordered by $V$ values</p>
+</li>
+<li>
+<p>While queue not empty:</p>
+<ul>
+<li>Extract node $i$ with minimum $V(i)$</li>
+<li>For each neighbor $j$ of $i$:  <br>
+If $V(i) + c(i \rightarrow j) &lt; V(j)$:   <br>
+Update $V(j) = V(i) + c(i \rightarrow j)$   <br>
+Decrease-key in priority queue</li>
+</ul>
+</li>
+<li>
+<p>Terminates when queue empty</p>
+</div>
+</li>
+</ul>
+</div>
+<br>
+<hr>
+<h2 id="finite-horizon-markov-decision-processes-mdp">
+  Finite Horizon Markov Decision Processes (MDP)
+  <a class="anchor" href="#finite-horizon-markov-decision-processes-mdp">#</a>
+</h2>
+<ul>
+<li><strong>Model</strong>:
+<ul>
+<li>$T$: finite horizon</li>
+<li>$S$: state space</li>
+<li>$A$: action space (possibly $A(s)$)</li>
+<li>$P(s&rsquo;|s,a)$: transition probabilities</li>
+<li>$R(s,a)$ or $R(s,a,s&rsquo;)$: reward function</li>
+</ul>
+</li>
+<li><strong>Bellman Optimality (Value Iteration)</strong>:<br>
+$V_t(s) ← \max_a [ Q_t(s,a) ]$. <br>
+$Q_t(s,a) = R(s,a) + \gamma \sum_{s&rsquo;} P(s&rsquo;|s,a) V_{t+1}(s&rsquo;)$</li>
+<li>Optimal policy $\pi_t^*(s) = \arg\max_a Q_t(s,a)$.</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<p><strong>Inventory Control</strong></p>
+<ul>
+<li>
+<p><strong>Planning horizon</strong>: $T$</p>
+</li>
+<li>
+<p><strong>State</strong>: $i$ (current inventory)</p>
+</li>
+<li>
+<p><strong>Decision</strong>: $x \geq 0$ (order quantity)</p>
+</li>
+<li>
+<p><strong>Ordering cost</strong>: $k$ (fixed) + $c$ per unit (missing in original)</p>
+</li>
+<li>
+<p><strong>Holding cost</strong>: $h$ (per unit remaining)</p>
+</li>
+<li>
+<p><strong>Shortage cost</strong>: $s$ (per unit unmet demand)</p>
+</li>
+<li>
+<p><strong>Next state</strong>:<br>
+$i&rsquo; = \max(i + x - D, 0)$ (clarified inventory cannot be negative)</p>
+</li>
+<li>
+<p>$V_t(i) = \min_{x\geq0} E_D [$ <br>
+$k\mathbf{1}_{{x&gt;0}} + c x + $ <br>
+$h(i+x-D)^+ + s(D-i-x)^+ +$</p>
+<p>$V_{t+1}(i&rsquo;)]$</p>
+</li>
+</ul>
+<p><strong>Backward Recursion</strong></p>
+<ol>
+<li>Initialize $V_{T+1}(i) = 0$ ∀i</li>
+<li>For $t = T$ downto $1$:
+<ul>
+<li>For each inventory level $i$:<br>
+a. Compute expected cost for all feasible $x$<br>
+b. Account for demand distribution (missing in original)<br>
+c. Choose $x^*$ that minimizes what&rsquo;s in $V_t(i)$</li>
+</ul>
+</li>
+</ol>
+  </div>
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<p><strong>Deterministic Lot-Sizing (Wagner-Whitin)</strong></p>
+<ul>
+<li><strong>Key property</strong>: Order only when inventory reaches 0 (zero inventory ordering)</li>
+<li><strong>State</strong>: Current (at the beginning of) period $t$</li>
+<li><strong>Action</strong>: Ordering for until period $\tau$</li>
+<li><strong>Transition</strong>: Jump to the beginning of period $\tau+1$</li>
+<li><strong>Cost components</strong>:
+<ul>
+<li>Fixed cost $k$ if ordering</li>
+<li>Variable cost $c_t \sum_{i=t}^{\tau} D_i$</li>
+<li>Holding cost $\sum_{i=t}^{\tau} (\sum_{j=t}^{i-1} h_j) D_i$</li>
+</ul>
+</li>
+<li><strong>DP Formulation</strong>:<br>
+$V(t) = \min_{τ \geq t} [$ <br>
+$k + c_t \sum_{i=t}^τ D_i + \sum_{i=t}^{τ-1} (\sum_{j=t}^{i-1} h_j) D_i + V(τ+1)]$</li>
+</ul>
+<p><strong>Algorithm Execution</strong></p>
+<ol>
+<li>Initialize $V(T+1) = 0$</li>
+<li>Backward recursion: For $t = T$ downto 1:
+<ul>
+<li>For each possible order duration $τ = t,&hellip;,T$:
+<ul>
+<li>Calculate total cost for covering $t$→$τ$</li>
+<li>Transition to state $τ+1$</li>
+</ul>
+</li>
+<li>Choose $τ^*$ with minimal total cost</li>
+</ul>
+</li>
+<li>Optimal policy: Set of periods where orders are placed</li>
+</ol>
+  </div>
+</div>
+<br>
+<hr>
+<h2 id="infinite-horizon-mdp">
+  Infinite Horizon MDP
+  <a class="anchor" href="#infinite-horizon-mdp">#</a>
+</h2>
+<ul>
+<li><strong>Model</strong>:
+– $S$: state space<br>
+– $A$: action space (possibly $A(s)$)<br>
+– $P(s&rsquo;|s,a)$: transition probabilities<br>
+– $R(s,a)$ or $R(s,a,s&rsquo;)$: reward function<br>
+– $\gamma \in [0,1]$: discount factor</li>
+<li><strong>Bellman Optimality (Value Iteration)</strong>:<br>
+$V(s) ← \max_a [ R(s,a) + \gamma \sum_{s&rsquo;} P(s&rsquo;|s,a) V(s&rsquo;) ]$.</li>
+<li><strong>Policy</strong>: $\pi(s) = a$. Optimal policy $\pi^<em>(s) = \arg\max_a Q^</em>(s,a)$.</li>
+<li><strong>Policy Iteration</strong>:
+<ol>
+<li>Policy Evaluation: $V^\pi$ solves $V(s) = R(s,\pi(s)) + \gamma \sum_{s&rsquo;} P(s&rsquo;|s,\pi(s)) V(s&rsquo;)$</li>
+<li>Policy Improvement: $\pi&rsquo;(s) = \arg\max_a [ R(s,a) + \gamma \sum_{s&rsquo;} P(s&rsquo;|s,a) V(s&rsquo;) ]$.</li>
+</ol>
+</li>
+<li><strong>Value Iteration</strong>:<br>
+$V(s) ← \max_a [ R(s,a) + \gamma \sum_{s&rsquo;} P(s&rsquo;|s,a) V(s&rsquo;) ]$.</li>
+<li><strong>Q-Value Function</strong>:<br>
+$Q(s,a) = R(s,a) + \gamma \sum_{s&rsquo;} P(s&rsquo;|s,a) V(s&rsquo;)$.</li>
+</ul>
+<br>
+<hr>
+<h2 id="advanced--approximate-methods">
+  Advanced &amp; Approximate Methods
+  <a class="anchor" href="#advanced--approximate-methods">#</a>
+</h2>
+<ul>
+<li><strong>Approximate DP (ADP)</strong>: $V(s) \approx \hat{V}(s; \theta)$.</li>
+<li><strong>Linear Programming Formulation (finite MDP)</strong>:<br>
+$\min \sum_s V(s)$, subject to <br>
+$V(s) \geq R(s,a) + \gamma \sum_{s&rsquo;} P(s&rsquo;|s,a)V(s&rsquo;) \ \forall s,a.$</li>
+<li><strong>Extensions</strong>:
+<ol>
+<li><strong>POMDP</strong>: Partial observability → belief states.</li>
+<li><strong>Constrained MDP</strong>: constraints on actions/rewards.</li>
+<li><strong>Multi-agent MDP</strong>: game-theoretic settings.</li>
+</ol>
+</li>
+</ul></div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

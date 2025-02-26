@@ -8,6 +8,13 @@
     <language>zh</language>
     <atom:link href="https://steve-shao.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>在Cursor IDE中使用MCP协议 - 零基础玩转AI工具无缝对接</title>
+      <link>https://steve-shao.github.io/zh/posts/2025/note-use-mcp-for-cursor/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/zh/posts/2025/note-use-mcp-for-cursor/</guid>
+      <description>&lt;p&gt;今天我们来聊聊MCP（Model Context Protocol，模型上下文协议）到底是什么，如何在Cursor里面使用MCP，如何利用现成资源，以及如何自己搭建MCP服务器。&lt;/p&gt;&#xA;&lt;p&gt;（这篇文章是我先用英文写好，然后图省事请DeepSeek翻译的。感觉他语气有点皮，大家不要介意 &amp;hellip;）&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>做个好人</title>
       <link>https://steve-shao.github.io/zh/posts/2024/2024-02-10-%E5%81%9A%E4%B8%AA%E5%A5%BD%E4%BA%BA/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>

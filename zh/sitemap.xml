@@ -41,6 +41,45 @@
                 href="https://steve-shao.github.io/zh/docs/projects/"
                 />
   </url><url>
+    <loc>https://steve-shao.github.io/zh/categories/AI/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/categories/AI/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/categories/AI/"
+                />
+  </url><url>
+    <loc>https://steve-shao.github.io/zh/categories/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/categories/"
+                />
+  </url><url>
+    <loc>https://steve-shao.github.io/zh/posts/2025/note-use-mcp-for-cursor/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/posts/2025/note-use-mcp-for-cursor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/posts/2025/note-use-mcp-for-cursor/"
+                />
+  </url><url>
     <loc>https://steve-shao.github.io/zh/posts/2024/2024-02-10-%E5%81%9A%E4%B8%AA%E5%A5%BD%E4%BA%BA/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -167,18 +206,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://steve-shao.github.io/zh/"
-                />
-  </url><url>
-    <loc>https://steve-shao.github.io/zh/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://steve-shao.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://steve-shao.github.io/zh/categories/"
                 />
   </url><url>
     <loc>https://steve-shao.github.io/zh/docs/</loc>

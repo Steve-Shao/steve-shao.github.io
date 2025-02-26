@@ -10,9 +10,9 @@
     <atom:link href="https://steve-shao.github.io/categories/Neural-Networks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Systematic Hyperparameter Tuning for Neural Network-Based PDE Solvers</title>
-      <link>https://steve-shao.github.io/posts/2025/hyperparameter-tuning/</link>
+      <link>https://steve-shao.github.io/posts/2025/manual-hyperparameter-tuning/</link>
       <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://steve-shao.github.io/posts/2025/hyperparameter-tuning/</guid>
+      <guid>https://steve-shao.github.io/posts/2025/manual-hyperparameter-tuning/</guid>
       <description>&lt;p&gt;When working with deep learning methods for partial differential equations (PDEs) like the &lt;strong&gt;Hamilton-Jacobi-Bellman (HJB) equation&lt;/strong&gt;, effective hyperparameter tuning proves critical for success. Based on experience with &#xA;  &lt;a href=&#34;https://github.com/Steve-Shao/TorchBSDE-Package&#34;&gt;DeepBSDE&lt;/a&gt; and Deep Splitting methods, here&amp;rsquo;s my battle-tested key principles:&lt;/p&gt;</description>
     </item>
     <item>

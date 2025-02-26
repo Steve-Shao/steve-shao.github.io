@@ -8,17 +8,24 @@
     <language>en</language>
     <atom:link href="https://steve-shao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Use Model Context Protocol (MCP) in Cursor IDE -  A Beginner&#39;s Guide to Seamless AI Tool Integration</title>
+      <link>https://steve-shao.github.io/posts/2025/note-use-mcp-for-cursor/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/posts/2025/note-use-mcp-for-cursor/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s explore what MCP (Model Context Protocol) is, how it works with the Cursor IDE (AI-powered code editor/IDE), and how you can use free resources or even build your own MCP server.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Systematic Hyperparameter Tuning for Neural Network-Based PDE Solvers</title>
-      <link>https://steve-shao.github.io/posts/2025/hyperparameter-tuning/</link>
+      <link>https://steve-shao.github.io/posts/2025/manual-hyperparameter-tuning/</link>
       <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://steve-shao.github.io/posts/2025/hyperparameter-tuning/</guid>
+      <guid>https://steve-shao.github.io/posts/2025/manual-hyperparameter-tuning/</guid>
       <description>&lt;p&gt;When working with deep learning methods for partial differential equations (PDEs) like the &lt;strong&gt;Hamilton-Jacobi-Bellman (HJB) equation&lt;/strong&gt;, effective hyperparameter tuning proves critical for success. Based on experience with &#xA;  &lt;a href=&#34;https://github.com/Steve-Shao/TorchBSDE-Package&#34;&gt;DeepBSDE&lt;/a&gt; and Deep Splitting methods, here&amp;rsquo;s my battle-tested key principles:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Concise Manual on How to Write an Optimization Model</title>
-      <link>https://steve-shao.github.io/posts/2025/optimization-modeling/</link>
+      <link>https://steve-shao.github.io/posts/2025/manual-optimization-modeling/</link>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://steve-shao.github.io/posts/2025/optimization-modeling/</guid>
+      <guid>https://steve-shao.github.io/posts/2025/manual-optimization-modeling/</guid>
       <description>&lt;p&gt;Here is a concise guide on writing an optimization model.&#xA;It is organized to&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fit the natural flow of a technical interview discussion&lt;/li&gt;&#xA;&lt;li&gt;Serve as a practical reference when collaborating with business or production teams on real-world problems.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The structure combines ideas from software system design process and the AIMMS modeling handbook. See for reference:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;  &lt;a href=&#34;https://www.youtube.com/watch?v=i7twT3x5yv8&#34;&gt;System Design Interview: A Step-By-Step Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;  &lt;a href=&#34;https://documentation.aimms.com/_downloads/AIMMS_modeling.pdf&#34;&gt;AIMMS Modeling Handbook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
