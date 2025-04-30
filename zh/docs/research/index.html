@@ -4,38 +4,89 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
-  研究
+  Github 代码库
   #
 
 
 
-  论文列表
+  
+  DeepCallCenter
   #
 
-准备中:
+本项目是对以下论文的实现：
 
-Ata, B., &amp; Shao, H., Dynamic Capacity Control for Network Revenue Management: A Computational Method Based on Neural Networks
-Kleywegt, A. J., Li, Y. &amp; Shao, H., A Markov Decision Process Model for Drivers&rsquo; Relocating Behavior in Ride-Hailing Systems
 
-预印本:
+  Dynamic Scheduling of a Multiclass Queue in the Halfin-Whitt Regime: A Computational Approach for High-Dimensional Problems,
 
-Kleywegt, A. J., &amp; Shao, H. (2022). Revenue Management Under the Markov Chain Choice Model with Joint Price and Assortment Decisions. arXiv:2204.04774
-Kleywegt, A. J., &amp; Shao, H. (2021). Optimizing Pricing, Repositioning, En-Route Time, and Idle Time in Ride-Hailing Systems. arXiv:2111.11551
-Kleywegt, A. J., &amp; Shao, H. (2020). Tractable Constrained Optimization over Multiple Product Attributes under Discrete Choice Models. arXiv:2007.09193
-Kleywegt, A. J., &amp; Shao, H. (2020). Joint Estimation of Discrete Choice Model and Arrival Rate with Unobserved Stock-out Events. arXiv:2003.02313
+论文作者为 
+  Baris Ata 和 
+  Ebru Kasilarlar。该论文探讨了客服 (Call Center) 系统的动态调度问题。
+论文首先建立了“连续时间马尔可夫决策过程” (CTMDP) 模型，然后在“重载极限” (heavy traffic limit) 下将其转化为布朗控制 (Brownian control) 问题。实验证明，我们可以使用深度学习方法求解该布朗控制问题，并由此获得对CTMDP系统的的有效控制策略。
+注：本项目依赖以下两个前期项目：
 
-期刊论文:">
+
+  TorchBSDE Solver Package
+
+  TorchSimulator
+
+
+
+  
+  TorchSimulator
+  #
+
+TorchSimulator 是一个演示框架，旨在展示基于GPU的并行张量化运算如何提升仿真计算性能。该框架通过提供可继承的CTMCSimulator和CTMDPSimulator类，为构建定制化类提供了基础。
+在提供的tutorial.ipynb教程中，我们演示了一个队列系统的动态调度的仿真问题。每个仿真样本路径模拟时长为17天（约2万次事件）。
+使用CPU（C&#43;&#43;）模拟仿真10,000条样本路径需约10分钟，而GPU加速后可在15分钟内完成1,000,000条路径的模拟仿真，速度提升达60倍。
+
+
+  
+  TorchBSDE Solver Package
+  #
+
+该代码库是韩劼群 (
+  Jiequn Han) 的 
+  DeepBSDE solver 的PyTorch实现，该项目可
+  通过深度学习技术求解高维偏微分方程 (PDE)。代码库既可作为Python包安装使用，也可作为git子模块嵌入其他项目。
+此外，我对 
+  DeepBSDE solver 的原始代码做了以下改进：
+
+支持GPU加速训练（通过向量化张量运算显著提升大规模问题求解速度）；
+支持随机初始状态（用神经网络替代标量参数描述初始值函数）；
+支持训练中断续训（通过更新config中的num_iterations参数）；
+优化梯度表示方式（z网络直接输出梯度值而非与扩散系数σ的乘积，简化复杂σ方程的处理）；
+移除了原实现中的纯工程技巧（如梯度输入缩放）；
+新增了对 reference policy 的支持（便于求解控制问题的HJB方程）；
+增加了扩展配置选项（新增equation_config定义方程基础属性、network_config控制神经网络结构、solver_config调节训练参数等核心配置模块）。
+
+
+
+  
+  TensorFlow (2.0) 实现的 DeepBSDE 求解器包
+  #
+
+该代码库是韩劼群 (
+  Jiequn Han) 的 
+  DeepBSDE solver 的一个克隆项目，该项目可
+  通过深度学习技术求解高维偏微分方程 (PDE)。">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://steve-shao.github.io/zh/docs/research/">
   <meta property="og:site_name" content="Hongzhang Shao">
-  <meta property="og:title" content="研究">
-  <meta property="og:description" content="研究 # 论文列表 # 准备中:
-Ata, B., &amp; Shao, H., Dynamic Capacity Control for Network Revenue Management: A Computational Method Based on Neural Networks Kleywegt, A. J., Li, Y. &amp; Shao, H., A Markov Decision Process Model for Drivers’ Relocating Behavior in Ride-Hailing Systems 预印本:
-Kleywegt, A. J., &amp; Shao, H. (2022). Revenue Management Under the Markov Chain Choice Model with Joint Price and Assortment Decisions. arXiv:2204.04774 Kleywegt, A. J., &amp; Shao, H. (2021). Optimizing Pricing, Repositioning, En-Route Time, and Idle Time in Ride-Hailing Systems. arXiv:2111.11551 Kleywegt, A. J., &amp; Shao, H. (2020). Tractable Constrained Optimization over Multiple Product Attributes under Discrete Choice Models. arXiv:2007.09193 Kleywegt, A. J., &amp; Shao, H. (2020). Joint Estimation of Discrete Choice Model and Arrival Rate with Unobserved Stock-out Events. arXiv:2003.02313 期刊论文:">
+  <meta property="og:title" content="研究及论文">
+  <meta property="og:description" content="Github 代码库 # DeepCallCenter # 本项目是对以下论文的实现：
+Dynamic Scheduling of a Multiclass Queue in the Halfin-Whitt Regime: A Computational Approach for High-Dimensional Problems, 论文作者为 Baris Ata 和 Ebru Kasilarlar。该论文探讨了客服 (Call Center) 系统的动态调度问题。
+论文首先建立了“连续时间马尔可夫决策过程” (CTMDP) 模型，然后在“重载极限” (heavy traffic limit) 下将其转化为布朗控制 (Brownian control) 问题。实验证明，我们可以使用深度学习方法求解该布朗控制问题，并由此获得对CTMDP系统的的有效控制策略。
+注：本项目依赖以下两个前期项目：
+TorchBSDE Solver Package TorchSimulator TorchSimulator # TorchSimulator 是一个演示框架，旨在展示基于GPU的并行张量化运算如何提升仿真计算性能。该框架通过提供可继承的CTMCSimulator和CTMDPSimulator类，为构建定制化类提供了基础。
+在提供的tutorial.ipynb教程中，我们演示了一个队列系统的动态调度的仿真问题。每个仿真样本路径模拟时长为17天（约2万次事件）。
+使用CPU（C&#43;&#43;）模拟仿真10,000条样本路径需约10分钟，而GPU加速后可在15分钟内完成1,000,000条路径的模拟仿真，速度提升达60倍。
+TorchBSDE Solver Package # 该代码库是韩劼群 ( Jiequn Han) 的 DeepBSDE solver 的PyTorch实现，该项目可 通过深度学习技术求解高维偏微分方程 (PDE)。代码库既可作为Python包安装使用，也可作为git子模块嵌入其他项目。
+此外，我对 DeepBSDE solver 的原始代码做了以下改进：
+支持GPU加速训练（通过向量化张量运算显著提升大规模问题求解速度）； 支持随机初始状态（用神经网络替代标量参数描述初始值函数）； 支持训练中断续训（通过更新config中的num_iterations参数）； 优化梯度表示方式（z网络直接输出梯度值而非与扩散系数σ的乘积，简化复杂σ方程的处理）； 移除了原实现中的纯工程技巧（如梯度输入缩放）； 新增了对 reference policy 的支持（便于求解控制问题的HJB方程）； 增加了扩展配置选项（新增equation_config定义方程基础属性、network_config控制神经网络结构、solver_config调节训练参数等核心配置模块）。 TensorFlow (2.0) 实现的 DeepBSDE 求解器包 # 该代码库是韩劼群 ( Jiequn Han) 的 DeepBSDE solver 的一个克隆项目，该项目可 通过深度学习技术求解高维偏微分方程 (PDE)。">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="website">
-<title>研究 | Hongzhang Shao</title>
+<title>研究及论文 | Hongzhang Shao</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="https://steve-shao.github.io/zh/docs/research/">
@@ -151,7 +202,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zh/docs/research/" class="active">研究</a>
+    <a href="/zh/docs/projects/" class="">独立开发</a>
   
 
           
@@ -169,7 +220,25 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zh/docs/projects/" class="">项目</a>
+    <a href="/zh/docs/toolbox/" class="">工具箱</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/zh/docs/research/" class="active">研究及论文</a>
   
 
           
@@ -251,7 +320,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>研究</h3>
+  <h3>研究及论文</h3>
 
   <label for="toc-control">
     
@@ -269,9 +338,19 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#研究"><strong>研究</strong></a>
+        <li><a href="#github-代码库"><strong>Github 代码库</strong></a>
           <ul>
-            <li><a href="#论文列表"><strong>论文列表</strong></a></li>
+            <li><a href="#deepcallcenter"><a href="https://github.com/steve-shao/DeepCallCenter"><strong>DeepCallCenter</strong></a></a></li>
+            <li><a href="#torchsimulator"><a href="https://github.com/steve-shao/TorchSimulator"><strong>TorchSimulator</strong></a></a></li>
+            <li><a href="#torchbsde-solver-package"><a href="https://github.com/steve-shao/TorchBSDE-Package"><strong>TorchBSDE Solver Package</strong></a></a></li>
+            <li><a href="#tensorflow-20-实现的-deepbsde-求解器包"><a href="https://github.com/steve-shao/DeepBSDE-Package"><strong>TensorFlow (2.0) 实现的 DeepBSDE 求解器包</strong></a></a></li>
+          </ul>
+        </li>
+        <li><a href="#论文"><strong>论文</strong></a>
+          <ul>
+            <li><a href="#准备中"><strong>准备中</strong></a></li>
+            <li><a href="#预印本"><strong>预印本</strong></a></li>
+            <li><a href="#期刊论文"><strong>期刊论文</strong></a></li>
           </ul>
         </li>
       </ul>
@@ -288,28 +367,101 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h2 id="研究">
-  <strong>研究</strong>
-  <a class="anchor" href="#%e7%a0%94%e7%a9%b6">#</a>
+  <article class="markdown book-article"><h2 id="github-代码库">
+  <strong>Github 代码库</strong>
+  <a class="anchor" href="#github-%e4%bb%a3%e7%a0%81%e5%ba%93">#</a>
 </h2>
 <hr>
-<h3 id="论文列表">
-  <strong>论文列表</strong>
-  <a class="anchor" href="#%e8%ae%ba%e6%96%87%e5%88%97%e8%a1%a8">#</a>
+<h3 id="deepcallcenter">
+  
+  <a href="https://github.com/steve-shao/DeepCallCenter"><strong>DeepCallCenter</strong></a>
+  <a class="anchor" href="#deepcallcenter">#</a>
 </h3>
-<p>准备中:</p>
+<p>本项目是对以下论文的实现：</p>
+<ul>
+<li>
+  <a href="https://arxiv.org/abs/2311.18128">Dynamic Scheduling of a Multiclass Queue in the Halfin-Whitt Regime: A Computational Approach for High-Dimensional Problems</a>,</li>
+</ul>
+<p>论文作者为 
+  <a href="https://www.chicagobooth.edu/faculty/directory/a/baris-ata">Baris Ata</a> 和 
+  <a href="https://ekasikaralar.github.io/Ebru-Kasikaralar/">Ebru Kasilarlar</a>。该论文探讨了客服 (Call Center) 系统的动态调度问题。</p>
+<p>论文首先建立了“连续时间马尔可夫决策过程” (CTMDP) 模型，然后在“重载极限” (heavy traffic limit) 下将其转化为布朗控制 (Brownian control) 问题。实验证明，我们可以使用深度学习方法求解该布朗控制问题，并由此获得对CTMDP系统的的有效控制策略。</p>
+<p><strong>注</strong>：本项目依赖以下两个前期项目：</p>
+<ul>
+<li>
+  <a href="https://github.com/steve-shao/TorchBSDE-Package">TorchBSDE Solver Package</a></li>
+<li>
+  <a href="https://github.com/steve-shao/TorchSimulator">TorchSimulator</a></li>
+</ul>
+<br>
+<h3 id="torchsimulator">
+  
+  <a href="https://github.com/steve-shao/TorchSimulator"><strong>TorchSimulator</strong></a>
+  <a class="anchor" href="#torchsimulator">#</a>
+</h3>
+<p>TorchSimulator 是一个演示框架，旨在展示基于GPU的<strong>并行张量化运算</strong>如何提升<strong>仿真计算</strong>性能。该框架通过提供可继承的<code>CTMCSimulator</code>和<code>CTMDPSimulator</code>类，为构建定制化类提供了基础。</p>
+<p>在提供的<code>tutorial.ipynb</code>教程中，我们演示了一个队列系统的动态调度的仿真问题。每个仿真样本路径模拟时长为17天（约2万次事件）。</p>
+<p>使用CPU（C++）模拟仿真10,000条样本路径需约10分钟，而GPU加速后可在15分钟内完成1,000,000条路径的模拟仿真，速度提升达<strong>60倍</strong>。</p>
+<br>
+<h3 id="torchbsde-solver-package">
+  
+  <a href="https://github.com/steve-shao/TorchBSDE-Package"><strong>TorchBSDE Solver Package</strong></a>
+  <a class="anchor" href="#torchbsde-solver-package">#</a>
+</h3>
+<p>该代码库是韩劼群 (
+  <a href="https://users.flatironinstitute.org/~jhan/">Jiequn Han</a>) 的 
+  <a href="https://github.com/frankhan91/DeepBSDE">DeepBSDE solver</a> 的<code>PyTorch</code>实现，该项目可
+  <a href="https://doi.org/10.1073/pnas.1718942115">通过深度学习技术求解高维偏微分方程 (PDE)</a>。代码库既可作为Python包安装使用，也可作为git子模块嵌入其他项目。</p>
+<p>此外，我对 
+  <a href="https://github.com/frankhan91/DeepBSDE">DeepBSDE solver</a> 的原始代码做了以下改进：</p>
+<ul>
+<li>支持GPU加速训练（通过向量化张量运算显著提升大规模问题求解速度）；</li>
+<li>支持随机初始状态（用神经网络替代标量参数描述初始值函数）；</li>
+<li>支持训练中断续训（通过更新config中的num_iterations参数）；</li>
+<li>优化梯度表示方式（z网络直接输出梯度值而非与扩散系数σ的乘积，简化复杂σ方程的处理）；</li>
+<li>移除了原实现中的纯工程技巧（如梯度输入缩放）；</li>
+<li>新增了对 reference policy 的支持（便于求解控制问题的HJB方程）；</li>
+<li>增加了扩展配置选项（新增equation_config定义方程基础属性、network_config控制神经网络结构、solver_config调节训练参数等核心配置模块）。</li>
+</ul>
+<br>
+<h3 id="tensorflow-20-实现的-deepbsde-求解器包">
+  
+  <a href="https://github.com/steve-shao/DeepBSDE-Package"><strong>TensorFlow (2.0) 实现的 DeepBSDE 求解器包</strong></a>
+  <a class="anchor" href="#tensorflow-20-%e5%ae%9e%e7%8e%b0%e7%9a%84-deepbsde-%e6%b1%82%e8%a7%a3%e5%99%a8%e5%8c%85">#</a>
+</h3>
+<p>该代码库是韩劼群 (
+  <a href="https://users.flatironinstitute.org/~jhan/">Jiequn Han</a>) 的 
+  <a href="https://github.com/frankhan91/DeepBSDE">DeepBSDE solver</a> 的一个克隆项目，该项目可
+  <a href="https://doi.org/10.1073/pnas.1718942115">通过深度学习技术求解高维偏微分方程 (PDE)</a>。</p>
+<p>我重构了代码结构，使其既可作为Python包安装使用，也可作为git子模块嵌入其他项目。我未对原始代码进行大幅改动，但添加了大量注释和docstring，以提升代码的可读性。</p>
+<br>
+<h2 id="论文">
+  <strong>论文</strong>
+  <a class="anchor" href="#%e8%ae%ba%e6%96%87">#</a>
+</h2>
+<hr>
+<h3 id="准备中">
+  <strong>准备中</strong>
+  <a class="anchor" href="#%e5%87%86%e5%a4%87%e4%b8%ad">#</a>
+</h3>
 <ul>
 <li>Ata, B., &amp; Shao, H., <em>Dynamic Capacity Control for Network Revenue Management: A Computational Method Based on Neural Networks</em></li>
 <li>Kleywegt, A. J., Li, Y. &amp; Shao, H., <em>A Markov Decision Process Model for Drivers&rsquo; Relocating Behavior in Ride-Hailing Systems</em></li>
 </ul>
-<p>预印本:</p>
+<h3 id="预印本">
+  <strong>预印本</strong>
+  <a class="anchor" href="#%e9%a2%84%e5%8d%b0%e6%9c%ac">#</a>
+</h3>
 <ul>
 <li>Kleywegt, A. J., &amp; Shao, H. (2022). <em>Revenue Management Under the Markov Chain Choice Model with Joint Price and Assortment Decisions</em>. arXiv:2204.04774</li>
 <li>Kleywegt, A. J., &amp; Shao, H. (2021). <em>Optimizing Pricing, Repositioning, En-Route Time, and Idle Time in Ride-Hailing Systems</em>. arXiv:2111.11551</li>
 <li>Kleywegt, A. J., &amp; Shao, H. (2020). <em>Tractable Constrained Optimization over Multiple Product Attributes under Discrete Choice Models</em>. arXiv:2007.09193</li>
 <li>Kleywegt, A. J., &amp; Shao, H. (2020). <em>Joint Estimation of Discrete Choice Model and Arrival Rate with Unobserved Stock-out Events</em>. arXiv:2003.02313</li>
 </ul>
-<p>期刊论文:</p>
+<h3 id="期刊论文">
+  <strong>期刊论文</strong>
+  <a class="anchor" href="#%e6%9c%9f%e5%88%8a%e8%ae%ba%e6%96%87">#</a>
+</h3>
 <ul>
 <li>Wang, T., Shao, H., Qu, X., &amp; Eliasson J. (2023). <em>Consolidating Passenger and Freight Transportation in an Urban-Rural Transit System</em>. Fundamental Research</li>
 <li>Qu, X., Shao, H., Wang, S., &amp; Wang, Y. (2022). <em>Are More Charging Piles Imperative to Future Electrified Transportation System?</em>. Fundamental Research</li>
@@ -359,9 +511,19 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#研究"><strong>研究</strong></a>
+        <li><a href="#github-代码库"><strong>Github 代码库</strong></a>
           <ul>
-            <li><a href="#论文列表"><strong>论文列表</strong></a></li>
+            <li><a href="#deepcallcenter"><a href="https://github.com/steve-shao/DeepCallCenter"><strong>DeepCallCenter</strong></a></a></li>
+            <li><a href="#torchsimulator"><a href="https://github.com/steve-shao/TorchSimulator"><strong>TorchSimulator</strong></a></a></li>
+            <li><a href="#torchbsde-solver-package"><a href="https://github.com/steve-shao/TorchBSDE-Package"><strong>TorchBSDE Solver Package</strong></a></a></li>
+            <li><a href="#tensorflow-20-实现的-deepbsde-求解器包"><a href="https://github.com/steve-shao/DeepBSDE-Package"><strong>TensorFlow (2.0) 实现的 DeepBSDE 求解器包</strong></a></a></li>
+          </ul>
+        </li>
+        <li><a href="#论文"><strong>论文</strong></a>
+          <ul>
+            <li><a href="#准备中"><strong>准备中</strong></a></li>
+            <li><a href="#预印本"><strong>预印本</strong></a></li>
+            <li><a href="#期刊论文"><strong>期刊论文</strong></a></li>
           </ul>
         </li>
       </ul>

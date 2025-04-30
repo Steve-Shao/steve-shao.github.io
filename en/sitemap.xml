@@ -15,6 +15,31 @@
                 href="https://steve-shao.github.io/docs/dummy/"
                 />
   </url><url>
+    <loc>https://steve-shao.github.io/docs/projects/</loc>
+    <lastmod>2025-02-01T09:57:27-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/docs/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/docs/projects/"
+                />
+  </url><url>
+    <loc>https://steve-shao.github.io/docs/toolbox/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://steve-shao.github.io/zh/docs/toolbox/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://steve-shao.github.io/docs/toolbox/"
+                />
+  </url><url>
     <loc>https://steve-shao.github.io/docs/research/</loc>
     <lastmod>2024-12-05T21:18:18-06:00</lastmod>
     <xhtml:link
@@ -28,17 +53,17 @@
                 href="https://steve-shao.github.io/docs/research/"
                 />
   </url><url>
-    <loc>https://steve-shao.github.io/docs/projects/</loc>
-    <lastmod>2025-02-01T09:57:27-06:00</lastmod>
+    <loc>https://steve-shao.github.io/posts/2025/j1-income-tax-resident-alien/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://steve-shao.github.io/zh/docs/projects/"
+                href="https://steve-shao.github.io/zh/posts/2025/j1-income-tax-resident-alien/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://steve-shao.github.io/docs/projects/"
+                href="https://steve-shao.github.io/posts/2025/j1-income-tax-resident-alien/"
                 />
   </url><url>
     <loc>https://steve-shao.github.io/categories/AI/</loc>
@@ -111,7 +136,7 @@
     <lastmod>2024-12-05T21:18:18-06:00</lastmod>
   </url><url>
     <loc>https://steve-shao.github.io/</loc>
-    <lastmod>2024-12-19T21:33:00-06:00</lastmod>
+    <lastmod>2025-03-28T16:03:53-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"

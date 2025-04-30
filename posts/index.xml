@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>All Notes on Hongzhang Shao</title>
+    <title>All Blog Posts on Hongzhang Shao</title>
     <link>https://steve-shao.github.io/posts/</link>
-    <description>Recent content in All Notes on Hongzhang Shao</description>
+    <description>Recent content in All Blog Posts on Hongzhang Shao</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://steve-shao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do Chinese J-1 Scholars Need to Pay U.S. Income Tax as Resident Aliens (RAs)?</title>
+      <link>https://steve-shao.github.io/posts/2025/j1-income-tax-resident-alien/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://steve-shao.github.io/posts/2025/j1-income-tax-resident-alien/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The short answer is&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Even if being considered resident aliens, Chinese J-1 scholars who qualify under Article 19 of the China-U.S. Tax Treaty, and are exempt from U.S. income tax on their teaching and research income, for up to three years.&lt;/li&gt;&#xA;&lt;li&gt;This exemption applies regardless of their visa status change from F-1 to J-1.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Use Model Context Protocol (MCP) in Cursor IDE -  A Beginner&#39;s Guide to Seamless AI Tool Integration</title>
       <link>https://steve-shao.github.io/posts/2025/note-use-mcp-for-cursor/</link>
