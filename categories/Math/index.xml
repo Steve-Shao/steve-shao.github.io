@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on Hongzhang Shao</title>
-    <link>https://steve-shao.github.io/categories/Math/</link>
+    <link>https://steveshao.com/categories/Math/</link>
     <description>Recent content in Math on Hongzhang Shao</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 Feb 2025 13:45:20 -0600</lastBuildDate>
-    <atom:link href="https://steve-shao.github.io/categories/Math/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://steveshao.com/categories/Math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Concise Manual on How to Write an Optimization Model</title>
-      <link>https://steve-shao.github.io/posts/2025/manual-optimization-modeling/</link>
+      <link>https://steveshao.com/posts/2025/manual-optimization-modeling/</link>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://steve-shao.github.io/posts/2025/manual-optimization-modeling/</guid>
+      <guid>https://steveshao.com/posts/2025/manual-optimization-modeling/</guid>
       <description>&lt;p&gt;Here is a concise guide on writing an optimization model.&#xA;It is organized to&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fit the natural flow of a technical interview discussion&lt;/li&gt;&#xA;&lt;li&gt;Serve as a practical reference when collaborating with business or production teams on real-world problems.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The structure combines ideas from software system design process and the AIMMS modeling handbook. See for reference:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;  &lt;a href=&#34;https://www.youtube.com/watch?v=i7twT3x5yv8&#34;&gt;System Design Interview: A Step-By-Step Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;  &lt;a href=&#34;https://documentation.aimms.com/_downloads/AIMMS_modeling.pdf&#34;&gt;AIMMS Modeling Handbook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Understanding Linear Quadratic Regulator (LQR) in the Context of Markov Decision Processes (MDP)</title>
-      <link>https://steve-shao.github.io/posts/2023/understanding-lqr/</link>
+      <link>https://steveshao.com/posts/2023/understanding-lqr/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://steve-shao.github.io/posts/2023/understanding-lqr/</guid>
+      <guid>https://steveshao.com/posts/2023/understanding-lqr/</guid>
       <description></description>
     </item>
   </channel>

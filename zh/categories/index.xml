@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hongzhang Shao</title>
-    <link>https://steve-shao.github.io/zh/categories/</link>
+    <link>https://steveshao.com/zh/categories/</link>
     <description>Recent content in Categories on Hongzhang Shao</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 26 Feb 2025 13:45:20 -0600</lastBuildDate>
-    <atom:link href="https://steve-shao.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://steveshao.com/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>https://steve-shao.github.io/zh/categories/AI/</link>
+      <link>https://steveshao.com/zh/categories/AI/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://steve-shao.github.io/zh/categories/AI/</guid>
+      <guid>https://steveshao.com/zh/categories/AI/</guid>
       <description></description>
     </item>
   </channel>
